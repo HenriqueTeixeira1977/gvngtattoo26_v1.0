@@ -1,3 +1,10 @@
+
+<!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Custom CSS (dark theme) -->
+
 <!-- NAVBAR -->
 <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container">

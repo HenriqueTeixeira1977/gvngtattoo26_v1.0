@@ -19,7 +19,7 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <!-- CSS Custom -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="public/assets/css/style.css">
 </head>
 
 <body class="bg-black text-white" style="scroll-behavior: smooth;">

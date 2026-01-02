@@ -1,4 +1,17 @@
-/* Reset básico */
+/* =========================
+   RESET & VARIÁVEIS
+========================= */
+:root {
+  --bg-main: #000;
+  --bg-secondary: #0d0d0d;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+
+  /* Neon sutil (luxo) */
+  --neon: #ffffff;
+  --neon-soft: rgba(255,255,255,0.15);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,263 +19,169 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #000000;
-  color: #fff;
-  line-height: 1.6;
+  background: red;
+  color: var(--text-main);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Links */
-a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-/* ===== NAVBAR ===== */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
-  transition: all 0.4s ease-in-out;
-  padding: 1rem 2rem;
+  transition: background 0.4s ease;
 }
+
 .navbar-brand {
-  font-size: 3rem;
-  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
-.navbar-brand:hover {
-  color: #aaa ;
+
+.nav-link {
+  color: var(--text-muted) !important;
+  margin-left: 15px;
+  transition: color 0.3s ease;
 }
-.navbar .nav-link {
-  color: #fff !important;
+
+.nav-link:hover {
+  color: var(--text-main) !important;
+}
+
+/* =========================
+   HERO
+========================= */
+#inicio {
+  background: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.9)
+    ),
+    url('../img/hero.jpg') center/cover no-repeat;
+}
+
+#inicio h1 {
+  text-shadow: 0 0 15px var(--neon-soft);
+}
+
+#inicio .btn {
+  padding: 12px 28px;
   font-weight: 500;
-  transition: color 0.3s;
-}
-.navbar .nav-link:hover {
-  color: #aaa !important;
-}
-.navbar.scrolled {
-  height: 70px;
-  background: rgba(141, 141, 141, 0.9) !important;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
 }
 
-/* HERO */
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+/* =========================
+   SEÇÕES
+========================= */
+section {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+h2 {
+  letter-spacing: 2px;
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.486);
-  z-index: 1;
+/* =========================
+   SOBRE O ARTISTA
+========================= */
+#artista img {
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
+/* =========================
+   ESTILOS
+========================= */
+.card {
+  border: none;
+  background: var(--bg-secondary);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px var(--neon-soft);
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+.card-title {
+  letter-spacing: 1px;
 }
 
-#estilos, #galeria, #diferenciais, #processo, #depoimentos, #sobre, #faq, #contato {
-  padding-top: 150px;
+/* =========================
+   PORTFÓLIO
+========================= */
+#portfolio img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
 }
 
-/* BOTÃO WHATSAPP FIXO */
-.btn-whatsapp {
+#portfolio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--neon-soft);
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+section.bg-black h2 {
+  text-shadow: 0 0 10px var(--neon-soft);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+.form-control {
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--text-main);
+}
+
+.form-control:focus {
+  background: transparent;
+  border-color: var(--text-main);
+  box-shadow: 0 0 10px var(--neon-soft);
+  color: var(--text-main);
+}
+
+/* =========================
+   BOTÃO WHATSAPP FIXO
+========================= */
+.whatsapp-float {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  background: #25d36500;
-  color: #fff;
-  border-radius: 100%;
-  font-size: 3rem;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  border: 1px solid var(--neon-soft);
+  padding: 12px 16px;
+  border-radius: 50px;
   z-index: 999;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-whatsapp:hover {
+.whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-    }
-
-/* SEÇÕES */
-section {
-  padding: 20rem 0;
+  box-shadow: 0 0 20px var(--neon-soft);
 }
 
-section h2 {
-  margin-bottom: 2rem;
-}
+/* =========================
+   MOBILE REFINADO
+========================= */
+@media (max-width: 768px) {
 
-.bg-dark {
-  background-color: #111 !important;
-}
+  #inicio {
+    padding-top: 120px;
+  }
 
-/* SWIPER */
-#estilos{
-  background-color: rgba(255, 0, 0, 0);
-}
-#estilos .container{
-  background-color: aqua;
-}
-.swiper-container {
-  width: 100%;
-  height: 70vh;
-  position: relative;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-}
-
-.slide-content .caption {
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
-  color: #fff;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.swiper-button-next:hover, .swiper-button-prev:hover {
-  color: #ccc;
-}
-
-/* DIFERENCIAIS / CARDS */
-.hover-shadow:hover {
-  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
-
-.card h5 {
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-}
-
-/* PARALLAX IMAGE */
-.parallax-img {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 350px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
-
-/* FORMULÁRIO */
-form input, form textarea {
-  transition: all 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-  border-color: #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
-  outline: none;
-}
-
-/* FAQ - Accordion */
-.accordion-button {
-  background-color: #111;
-  color: #fff;
-  font-weight: 500;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #fff;
-  background-color: #222;
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
-}
-
-.accordion-body {
-  color: #bbb;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 992px) {
-  .hero-content h1 {
+  #inicio h1 {
     font-size: 2.2rem;
   }
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
 
-@media (max-width: 576px) {
-  .hero-content h1 {
-    font-size: 1.8rem;
+  .navbar {
+    background: rgba(0,0,0,0.95);
   }
-  .hero-content p {
-    font-size: 0.9rem;
+
+  .nav-link {
+    padding: 15px 0;
+    font-size: 1.1rem;
   }
-  .swiper-slide .caption {
-    bottom: 10%;
-    left: 5%;
+
+  #portfolio .col-6 {
+    padding: 5px;
   }
-}
-
-/* FOOTER */
-footer {
-  border-top: 1px solid #333;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/* ANIMAÇÕES ADICIONAIS */
-[data-aos] {
-  transition-property: transform, opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
 }
