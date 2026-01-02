@@ -18,7 +18,7 @@ O projeto transmite uma identidade visual premium: fundo preto profundo, tipogra
 - **JavaScript vanilla** (para interações leves)
 
 ## Estrutura de Pastas
-gvng-tattoo/
+gvngtattoo26_v1.0/
 ├── index.php                   # Página principal (one-page)
 ├── enviar.php                  # Processamento do formulário de contato
 ├── assets/

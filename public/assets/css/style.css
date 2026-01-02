@@ -1,0 +1,268 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 2rem;
+}
+.navbar-brand {
+  font-size: 3rem;
+  color: #fff;
+}
+.navbar-brand:hover {
+  color: #aaa ;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #aaa !important;
+}
+.navbar.scrolled {
+  height: 70px;
+  background: rgba(141, 141, 141, 0.9) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.486);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#estilos, #galeria, #diferenciais, #processo, #depoimentos, #sobre, #faq, #contato {
+  padding-top: 150px;
+}
+
+/* BOTÃO WHATSAPP FIXO */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #25d36500;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 3rem;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+/* SEÇÕES */
+section {
+  padding: 20rem 0;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+}
+
+.bg-dark {
+  background-color: #111 !important;
+}
+
+/* SWIPER */
+#estilos{
+  background-color: rgba(255, 0, 0, 0);
+}
+#estilos .container{
+  background-color: aqua;
+}
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.slide-content .caption {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: #fff;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #ccc;
+}
+
+/* DIFERENCIAIS / CARDS */
+.hover-shadow:hover {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.card h5 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/* PARALLAX IMAGE */
+.parallax-img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+/* FORMULÁRIO */
+form input, form textarea {
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  outline: none;
+}
+
+/* FAQ - Accordion */
+.accordion-button {
+  background-color: #111;
+  color: #fff;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #222;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
+}
+
+.accordion-body {
+  color: #bbb;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .swiper-slide .caption {
+    bottom: 10%;
+    left: 5%;
+  }
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ANIMAÇÕES ADICIONAIS */
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
