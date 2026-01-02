@@ -19,21 +19,21 @@ O projeto transmite uma identidade visual premium: fundo preto profundo, tipogra
 
 ## Estrutura de Pastas
 gvng-tattoo/
-├── index.php                # Página principal (one-page)
-├── enviar.php               # Processamento do formulário de contato
+├── index.php                   # Página principal (one-page)
+├── enviar.php                  # Processamento do formulário de contato
 ├── assets/
 │   ├── css/
-│   │   └── style.css        # Estilos personalizados
+│   │   └── style.css           # Estilos personalizados
 │   ├── img/
-│   │   ├── hero/            # poster_hero.jpg
-│   │   ├── estilos/         # style1.png, style2.png, style3.png
-│   │   ├── galeria/         # galeria_1.jpg, galeria_2.jpg, etc.
-│   │   └── sobre/           # sobre.png
+│   │   ├── hero/               # poster_hero.jpg
+│   │   ├── estilos/            # style1.png, style2.png, style3.png
+│   │   ├── galeria/            # galeria_1.jpg, galeria_2.jpg, etc.
+│   │   └── sobre/              # sobre.png
 │   └── videos/
-│       └── gvng_hero.mp4     # Vídeo de fundo do hero
-└── README.md                # Este arquivo
-text## Instalação e Configuração
+│       └── gvng_hero.mp4       # Vídeo de fundo do hero
+└── README.md                   # Este arquivo text
 
+## Instalação e Configuração
 1. **Requisitos**
    - Servidor web com suporte a PHP 8+ (Apache, Nginx + PHP-FPM, XAMPP, etc.)
    - Função `mail()` habilitada ou servidor SMTP configurado (para envio de e-mails)
