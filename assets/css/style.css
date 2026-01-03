@@ -149,6 +149,22 @@ h2.display-5::after {
   box-shadow: 0 20px 40px rgba(197, 197, 197, 0.192) !important;
 }
 
+/* Parallax */
+.parallax {
+  background-image: url('assets/img/tattoo-bg.jpg'); /* troque pela sua imagem */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 /* BOTÕES FLUTUANTES */
 .btn-whatsapp {
   position: fixed;
