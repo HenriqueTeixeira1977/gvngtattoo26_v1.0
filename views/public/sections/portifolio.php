@@ -7,8 +7,6 @@
       <?php for($i=1;$i<=8;$i++): ?>
       <div class="col-6 col-md-3" data-aos="fade-up">
         <img src="assets/img/portifolio/tattoo01.png?=$i?>.jpg" class="img-fluid rounded" alt="">
-      </div><div class="col-6 col-md-3" data-aos="fade-up">
-        <img src="assets/img/portifolio/tattoo02.png?=$i?>.jpg" class="img-fluid rounded" alt="">
       </div>
       <?php endfor; ?>
     </div>

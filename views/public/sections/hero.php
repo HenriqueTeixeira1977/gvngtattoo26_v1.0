@@ -10,11 +10,11 @@
   </video>
 
   <!-- Overlay degradê premium (preto com toque dourado sutil) -->
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95));"></div>
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));"></div>
 
   <!-- Conteúdo central -->
   <div class="container">
-    <div class="hero-content data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+    <div class="hero-content data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
       <h1 class="display-2">
         Arte de Elite<br>
         <span style="color:#fff5; text-shadow: 0 0 30px rgba(196, 196, 196, 0.4);">Estilo GVNG</span>.
@@ -32,5 +32,8 @@
 
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js"></script>
-<script src="../../assets/js/animations.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>

@@ -1,4 +1,6 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="../../assets/css/style.css">
+
 <!-- FOOTER PARTIAL -->
 <footer class="footer-custom mt-5 pt-5 pb-4">
     <div class="container">
@@ -76,7 +78,5 @@
     </div>
 
 <!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/animations.js"></script>

@@ -8,6 +8,8 @@
 <?php include 'views/public/sections/estilos.php'; ?>
 <!--  PORTFÓLIO -->
 <?php include 'views/public/sections/portifolio.php'; ?>
+<!--  LOJA -->
+<?php include 'views/public/sections/loja.php'; ?>
 <!--  ARTISTA -->
 <?php include 'views/public/sections/artista.php'; ?>
 <!--  CTA FINAL -->
