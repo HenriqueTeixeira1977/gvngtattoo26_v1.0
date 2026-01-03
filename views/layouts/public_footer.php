@@ -1,13 +1,13 @@
+<link rel="stylesheet" href="../../assets/css/style.css">
 <!-- FOOTER PARTIAL -->
 <footer class="footer-custom mt-5 pt-5 pb-4">
     <div class="container">
         <div class="row">
             <!-- COL 1 -->
             <div class="col-md-4 mb-4">
-                <h5 class="fw-bold text-white mb-3">Duarte Dias Engenharia</h5>
+                <h5 class="fw-bold text-white mb-3">GVNG Tattoo</h5>
                 <p class="text-white-50">
-                    Especialistas em projetos, execução, consultorias e soluções técnicas
-                    para obras residenciais, comerciais e industriais.
+                    Especialistas em tatuagens de alto padrão, execução, consultorias e soluções técnicas, workshops e cards.
                 </p>
 
                 <div class="mt-3 d-flex gap-3">
@@ -33,8 +33,8 @@
             <div class="col-md-3 mb-4">
                 <h6 class="fw-bold text-white mb-3">Contato</h6>
                 <ul class="list-unstyled text-white-50">
-                    <li><i class="bi bi-telephone me-2"></i> (19) 99733-9148</li>
-                    <li><i class="bi bi-envelope me-2"></i> contato@duartediasengenharia.com.br</li>
+                    <li><i class="bi bi-telephone me-2"></i> (19) 99736-6901</li>
+                    <li><i class="bi bi-envelope me-2"></i> contato@gvngtattoo.com.br</li>
                     <li><i class="bi bi-geo-alt me-2"></i> Campinas - SP</li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
         <hr class="border-secondary mt-4">
 
         <div class="text-center text-white-50 pt-3">
-            © <?php echo date('Y'); ?> Duarte Dias Engenharia — Todos os direitos reservados.
+            © <?php echo date('Y'); ?> Gvng Tattoo by Carlos Henrique — Todos os direitos reservados.
         </div>
 
     </div>
@@ -67,7 +67,7 @@
         </button>
 
         <!-- Botão WhatsApp -->
-        <a href="https://wa.me/5519997339148"
+        <a href="https://wa.me/5519997366901"
         target="_blank"
         class="floating-btn whatsapp"
         data-tooltip="Fale conosco no WhatsApp">
@@ -77,5 +77,6 @@
 
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/animations.js"></script>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/animations.js"></script>
