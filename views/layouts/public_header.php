@@ -54,11 +54,12 @@
                 class="logo logo-white" 
                 height="50" 
                 alt="GVNG Tattoo">
-
+<!--
             <img src="assets/img/logotipos/logo8.png" 
                 class="logo logo-dark" 
                 height="50" 
                 alt="GVNG Tattoo">
+-->
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
