@@ -16,7 +16,7 @@
                 <small class="text-muted">Cliente desde 2022</small>
               </div>
             </div>
-            <p class="lead fst-italic">"Experiência incrível! O estúdio tem um ambiente acolhedor e os artistas são extremamente profissionais."</p>
+            <p class="lead fst-italic">"O estúdio tem um ambiente acolhedor e os artistas são extremamente profissionais."</p>
             <div class="text-warning">
               ★★★★★
             </div>
@@ -45,6 +45,40 @@
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/cliente3.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
+              <div>
+                <h5 class="mb-0">Juliana Lima</h5>
+                <small class="text-muted">Cliente desde 2021</small>
+              </div>
+            </div>
+            <p class="lead fst-italic">"O GVNG Tattoo superou minhas expectativas. Atendimento impecável e resultado maravilhoso."</p>
+            <div class="text-warning">
+              ★★★★★
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Depoimento 4 -->
+        <div class="swiper-slide">
+          <div class="card bg-black text-light border-0 shadow-lg p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/img/cliente4.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
+              <div>
+                <h5 class="mb-0">Juliana Lima</h5>
+                <small class="text-muted">Cliente desde 2021</small>
+              </div>
+            </div>
+            <p class="lead fst-italic">"O GVNG Tattoo superou minhas expectativas. Atendimento impecável e resultado maravilhoso."</p>
+            <div class="text-warning">
+              ★★★★★
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Depoimento 5 -->
+        <div class="swiper-slide">
+          <div class="card bg-black text-light border-0 shadow-lg p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/img/cliente5.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 5">
               <div>
                 <h5 class="mb-0">Juliana Lima</h5>
                 <small class="text-muted">Cliente desde 2021</small>

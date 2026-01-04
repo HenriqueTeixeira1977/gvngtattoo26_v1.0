@@ -151,7 +151,7 @@ h2.display-5::after {
 
 /* Parallax */
 .parallax {
-  background-image: url('assets/img/tattoo-bg.jpg'); /* troque pela sua imagem */
+  background-image: url('assets/img/parallaz'); /* troque pela sua imagem */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
