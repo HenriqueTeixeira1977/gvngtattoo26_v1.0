@@ -15,10 +15,10 @@
   <!-- Conteúdo central -->
   <div class="container">
     <div class="hero-content data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
-      <h1 class="display-2">
-        Arte de Elite<br>
-        <span style="color:#fff5; text-shadow: 0 0 30px rgba(196, 196, 196, 0.4);">Estilo GVNG</span>.
-      </h1>
+      <h1 class="display-2">GVNG TATTOO</h1>
+      <h2>
+        <span style="color:#fff777; text-shadow: 0 0 10px rgba(54, 54, 54, 1);">Arte&Estilo</span>
+      </h2>
       <p class="lead">
         Tatuagens exclusivas para quem exige o máximo em design, precisão e expressão eterna.
       </p>
