@@ -50,9 +50,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-overlay">
     <div class="container">
         <a class="navbar-brand fw-bold" href="/index.php">
-            <img src="assets/img/logotipos/logo7.png" 
+            <img src="assets/img/logotipos/logo5.png" 
                 class="logo logo-white" 
-                height="50" 
+                height="70" 
                 alt="GVNG Tattoo">
 <!--
             <img src="assets/img/logotipos/logo8.png" 
