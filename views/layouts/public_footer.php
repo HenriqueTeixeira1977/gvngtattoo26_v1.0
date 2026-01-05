@@ -24,7 +24,7 @@
                 <h6 class="fw-bold text-white mb-3">Menu</h6>
                 <ul class="list-unstyled">
                     <li><a href="/" class="footer-link">Início</a></li>
-                    <li><a href="#servicos" class="footer-link">Serviços</a></li>
+                    <li><a href="#servicos" class="footer-link"></a></li>
                     <li><a href="#projetos" class="footer-link">Projetos</a></li>
                     <li><a href="#sobre" class="footer-link">Sobre</a></li>
                     <li><a href="#contato" class="footer-link">Contato</a></li>

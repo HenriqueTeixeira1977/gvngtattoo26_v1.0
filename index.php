@@ -1,4 +1,3 @@
-
 <!--  HEADER / NAV  -->
 <?php include 'views/layouts/public_header.php'; ?>
 
@@ -12,7 +11,6 @@
 <?php include 'views/public/sections/galeria.php'; ?>
 <!--  DEPOIMENTOS -->
 <?php include 'views/public/sections/depoimentos.php'; ?>
-
 <!--  LOJA -->
 <?php include 'views/public/sections/loja.php'; ?>
 <!--  ARTISTA -->
@@ -21,10 +19,10 @@
 <?php include 'views/public/sections/ctafinal.php'; ?>
 <!--  PARALLAX -->
 <?php include 'views/public/sections/parallax.php'; ?>
+<!--  CONTATO -->
+<?php include 'views/public/sections/contato.php'; ?>   
 <!--  LOCALIZAÇÃO -->
 <?php include 'views/public/sections/localizacao.php'; ?>
-<!--  CONTATO -->
-<?php include 'views/public/sections/contato.php'; ?>
 
 <!--  FOOTER -->
 <?php include 'views/layouts/public_footer.php'; ?>

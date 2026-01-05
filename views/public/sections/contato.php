@@ -4,8 +4,8 @@
 <section id="contato" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2 class="text-center display-5 fw-bold mb-5 text-uppercase">Entre em Contato</h2>
-    <div class="row g-4">
-      
+    
+    <div class="row g-4">      
       <!-- Informações de contato -->
       <div class="col-lg-6 d-flex flex-column justify-content-center">
         <div class="p-4">

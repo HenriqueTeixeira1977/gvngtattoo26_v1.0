@@ -6,7 +6,7 @@
         <img src="assets/img/sobre/sobre.png" class="img-fluid rounded" alt="Carlos Henrique">
       </div>
       <div class="col-md-7">
-        <h2 class="fw-bold">Carlos Henrique</h2>
+        <h2 class="fw-bold">Sou Carlos Henrique</h2>
         <p>
           Pai orgulhoso da Helena, artista com 9 anos de experiência e apaixonado por transformar    ideias em arte na pele. 
         </p>

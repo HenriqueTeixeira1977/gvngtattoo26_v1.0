@@ -4,28 +4,35 @@
   margin: 0; 
   padding: 0; 
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  /*  font-family: 'Roboto', sans-serif; */
   background: #000;
   color: #fff;
   line-height: 1.7;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 
+/* SEÇÕES */
 /* Seções Gerais */
 section {
-  padding: 100px 0;
+  padding: 70px 0;
+}
+section h2 {
+  margin-bottom: 1rem;
+}
+.bg-dark {
+  background-color: #111 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 h2.display-5 {
   font-size: 3.5rem;
@@ -40,52 +47,22 @@ h2.display-5::after {
   display: block;
   margin: 20px auto;
 }
-
 /* Links */
 a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 a:hover {
   opacity: 0.8;
 }
 
 /* Navbar Premium com Glassmorphism */
 .navbar {
-  transition: all 0.15s ease;
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(10px);
-}
-.navbar.scrolled {
-  background: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0 8px 32px rgba(145, 145, 145, 0.6);
-}
-.nav-link {
-  position: relative;
-  padding: 20px !important;
-  transition: color 0.3s ease;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background: #c7c7c7;
-  transition: all 0.3s ease;
-}
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
-  left: 0;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
+  /*transition: all 0.15s ease;*/
   transition: all 0.4s ease-in-out;
   padding: 1rem 2rem;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navbar-brand {
   font-size: 3rem;
@@ -95,41 +72,52 @@ a:hover {
   color: #aaa ;
 }
 .navbar .nav-link {
+  position: relative;
+  padding: 10px !important;
+  transition: color 0.3s ease;
   color: #fff !important;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: 100;
 }
-.navbar .nav-link:hover {
-  color: #aaa !important;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #fbff00;
+  transition: all 0.3s ease;
 }
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
 .navbar.scrolled {
-  height: 70px;
-  background: rgba(141, 141, 141, 0.112) !important;
+  height: 90px;
+  background: rgb(26, 26, 26) !important;
   backdrop-filter: blur(6px);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 12px rgba(255, 255, 255, 0.5);
 }
 
 /* HERO PREMIUM */
-.hero-video { 
+/*.hero-video { 
   filter: brightness(0.7) contrast(1.2); 
 }
-
+*/
 /* Hover dourado sutil */
-.btn-outline-light:hover .bg-gold { 
+/*.btn-outline-light:hover .bg-gold { 
   opacity: 0.15; 
-} 
-
+} */
+/*
 .max-w-800 { 
   max-width: 800px; 
-}
+}*/
 
-@media (max-width: 768px) {
-  .display-2 { font-size: 3.5rem !important; }
-  .lead.fs-3 { font-size: 1.3rem !important; }
-}
+
 
 /* HERO */
-
 .hero {
   position: relative;
   width: 100%;
@@ -155,7 +143,6 @@ a:hover {
   object-fit: cover;
   z-index: -1;
 }
-
 .hero .overlay {
   position: absolute;
   top: 0; left: 0;
@@ -163,27 +150,74 @@ a:hover {
   background: rgb(1, 255, 22);
   z-index: 1;
 }
-
 .hero-content {background-color: rgba(255, 0, 0, 0);
   position: relative;
   z-index: 2;
   max-width: 800px;
   text-align: center;
 }
-
 .hero-content h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
 }
-
 .hero-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+/* SWIPER */
+#estilos{
+  background-color: rgb(0, 0, 0);
+}
+#estilos .container{
+  background-color: rgba(0, 255, 64, 0);
+    padding-top: 70px;
+}
+
+/*  PORTIFOLIO  */
+#portfolio {
+  background-color: rgba(255, 0, 0, 0);
+  padding-top: 70px;
+}
+#portfolio .container {
+  background-color: rgba(51, 255, 0, 0);
+  padding-top: 70px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.slide-content .caption {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: #fff;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #ccc;
 }
 
 /* Galeria Premium */
@@ -208,6 +242,18 @@ a:hover {
   transform: translateY(0);
 }
 
+/* DIFERENCIAIS / CARDS */
+.hover-shadow:hover {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.card h5 {
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-size: 0.95rem;
+}
 /* Cards Premium */
 .card, .bg-black, .bg-dark {
   border: none;
@@ -218,39 +264,109 @@ a:hover {
   box-shadow: 0 20px 40px rgba(197, 197, 197, 0.192) !important;
 }
 
+
 /* Parallax */
 .parallax {
   background-image: url('../img/parallax/parallax1.png'); /* troque pela sua imagem */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 200px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/* PARALLAX IMAGE */
+.parallax-img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 150px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
 
+
+/* FAQ - Accordion */
+.accordion-button {
+  background-color: #111;
+  color: #fff;
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #222;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
+}
+.accordion-body {
+  color: #bbb;
+}
+
+/*  CONTATO  */
+#contato {
+  background-color: rgb(163, 163, 163);
+}#contato .container{
+  background-color: rgba(255, 0, 0, 0);
+  padding: 100px 0;
+}
+#contato .container 
+
+
+/* FORMULÁRIO */
+form input, form textarea {
+  transition: all 0.3s ease;
+}
+form input:focus, form textarea:focus {
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  outline: none;
+}
+
+/* LOCALIZAÇÃO - MAPA */
 #localizacao {background-color: rgba(255, 0, 0, 0);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 700px;
+  padding: 0px 0 0 0;
+  height: 100%;
   border: none;
 }
-#localizacao .container {background-color: #77777700;
+#localizacao .text {background-color: #1eff0000;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 #localizacao .mapa {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  height: 300px;
   border: none;
 }
 
 
+/* FOOTER */
+footer {
+  border-top: 1px solid #333;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer a{
+  color: rgb(85, 85, 85);
+}
+
 
 /* BOTÕES FLUTUANTES */
+/* WHATSAPP */
 .btn-whatsapp {
   position: fixed;
   bottom: 90px;
@@ -262,20 +378,34 @@ a:hover {
   text-decoration: none;
   z-index: 999;
 }
-
-.btn-topo {
+.btn-whatsapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #c7c7c7;
+  bottom: 50px;
+  right: 50px;
+  background: #25d36500;
   color: #fff;
-  border: none;
-  padding: 15px;
-  border-radius: 50%;
-  display: none;
+  border-radius: 100%;
+  font-size: 3rem;
   z-index: 999;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.floating-btn.whatsapp {
+    background: #25d366;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
+    70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
 
+
+/* VOLTAR AO TOPO */
 .floating-buttons {
     position: fixed;
     right: 24px;
@@ -285,7 +415,6 @@ a:hover {
     flex-direction: column;
     gap: 14px;
 }
-
 /* BOTÃO BASE */
 .floating-btn {
     width: 56px;
@@ -296,45 +425,32 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     background: #333;
     box-shadow: 0 10px 30px rgba(0,0,0,.3);
     transition: all .35s ease;
     position: relative;
 }
-
-/* WHATSAPP */
-.floating-btn.whatsapp {
-    background: #25d366;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
-    70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
-    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
-}
-
-/* VOLTAR AO TOPO */
 .floating-btn.top {
-    background: var(--primary);
+    background: rgba(122, 122, 122, 0.589);
     opacity: 0;
     pointer-events: none;
     transform: translateY(15px) scale(.9);
 }
-
 .floating-btn.top.show {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0) scale(1);
 }
 
+
 /* HOVER */
 .floating-btn:hover {
     transform: scale(1.08);
     filter: brightness(1.1);
 }
+
 
 /* TOOLTIP */
 .floating-btn::after {
@@ -352,16 +468,58 @@ a:hover {
     transition: all .3s ease;
     pointer-events: none;
 }
-
 .floating-btn:hover::after {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* Responsividade */
+
+/* ANIMAÇÕES ADICIONAIS */
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .hero-content h1 { font-size: 3rem; }
   h2.display-5 { font-size: 2.5rem; }
   section { padding: 80px 0; }
 } 
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3rem; }
+  h2.display-5 { font-size: 2.5rem; }
+  section { padding: 80px 0; }
+} 
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .swiper-slide .caption {
+    bottom: 10%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-2 { 
+    font-size: 3.5rem !important; }
+  .lead.fs-3 { font-size: 1.3rem !important; }
+}
 

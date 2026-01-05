@@ -1,3 +1,8 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/style.css">
+
+
+
 <!-- ESTILOS -->
 <section id="estilos" class="py-5 bg-black">
   <div class="container">
