@@ -65,23 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // COUNTER
-    const counters = document.querySelectorAll("[data-counter]");
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute("data-counter");
-            const count = +counter.innerText;
-            const increment = target / 80;
-
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 30);
-            } else {
-                counter.innerText = target;
-            }
-        };
-        updateCount();
-    });
 
     // SWIPER
     if (document.querySelector(".mySwiper")) {
@@ -106,22 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-var swiper = new Swiper(".mySwiper", { 
-  loop: true, autoplay: { 
-    delay: 5000, 
-    disableOnInteraction: false, 
-  }, 
-  pagination: { 
-    el: ".swiper-pagination", 
-    clickable: true, 
-  }, 
-  navigation: { 
-    nextEl: ".swiper-button-next", 
-    prevEl: ".swiper-button-prev", 
-  }, 
-  effect: "fade", // pode trocar para "slide", "cube", "coverflow" 
-});
-
 
 // Back to Top Button
 document.addEventListener("DOMContentLoaded", () => {
@@ -144,4 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+
 

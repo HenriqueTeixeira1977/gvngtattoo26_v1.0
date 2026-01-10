@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* SECTION */
+.coming-soon {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+.coming-soon .bg {
+  position: absolute;
+  inset: 0;
+  background: url('../img/hero-coming.jpg') center/cover no-repeat;
+  transform: scale(1.15);
+  transition: transform .2s linear;
+}
+
+.coming-soon .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+}
+
+/* CONTENT */
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  letter-spacing: 6px;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  opacity: .7;
+}
+
+.content p {
+  max-width: 520px;
+  opacity: .85;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-outline-light {
+  border-radius: 30px;
+  padding: 12px 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .content h1 {
+    letter-spacing: 3px;
+  }
+}

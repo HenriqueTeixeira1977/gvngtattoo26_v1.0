@@ -44,41 +44,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/coming-soon.css">
 
 </head>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-overlay">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/index.php">
-            <img src="assets/img/logotipos/logo5.png" 
-                class="logo logo-white" 
-                height="70" 
-                alt="GVNG Tattoo">
-<!--
-            <img src="assets/img/logotipos/logo8.png" 
-                class="logo logo-dark" 
-                height="50" 
-                alt="GVNG Tattoo">
--->
-        </a>
+<body>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<section class="coming-soon">
 
-        <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#estilos-carousel    ">Estilos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portifólio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#loja">Loja</a></li>
-                <li class="nav-item"><a class="nav-link" href="#artista">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://wa.me/5519997339148" target="_blank">19 99733-9148</a></li>
-            </ul>
-        </div>  
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <div class="content text-center">
+    <h1>GVNG</h1>
+    <span class="subtitle">by Carlos Henrique</span>
+
+    <p class="mt-4">
+      Tattoo premium. Arte exclusiva.<br>
+      Nosso site está em desenvolvimento.
+    </p>
+
+    <div class="actions mt-4">
+      <a href="https://wa.me/55SEUNUMERO" class="btn btn-outline-light">
+        Agendar Tattoo
+      </a>
+      <a href="https://instagram.com/gvngtattoo" class="btn btn-link text-light">
+        Instagram
+      </a>
     </div>
-</nav>
+  </div>
 
-<script src="../../assets/js/main.js"></script>
-<script src="../../assets/js/animations.js"></script>
+</section>
+
+<script src="assets/js/coming-soon.js"></script>
+</body>
+</html>
