@@ -24,7 +24,7 @@
     <meta property="og:image" content="assets/img/og-image.jpg">
     <meta property="og:url" content="https://gvngtattoo.com.br">
     <meta property="og:type" content="website">
-
+    
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

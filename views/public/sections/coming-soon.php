@@ -42,7 +42,6 @@
 
     <!-- SEUS CSS (CAMINHO ABSOLUTO) -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/coming-soon.css">
 
@@ -56,21 +55,41 @@
   <div class="overlay"></div>
 
   <div class="content text-center">
+    <a class="navbar-brand fw-bold" href="/index.php">
+      <img src="assets/img/logotipos/logo5.png" 
+          class="logo logo-white" 
+          height="250" 
+          alt="GVNG Tattoo">
+    </a>
     <h1>GVNG</h1>
     <span class="subtitle">by Carlos Henrique</span>
-
     <p class="mt-4">
-      Tattoo premium. Arte exclusiva.<br>
-      Nosso site está em desenvolvimento.
+      Nosso site está em desenvolvimento. Faltam...
     </p>
 
+    <!-- COUNTER  -->
+    <div class="countdown mt-5">
+      <div class="time-box">
+        <span id="days">30</span>
+        <small>Dias</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>Horas</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>Min</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>Seg</small>
+      </div>
+    </div>
+
     <div class="actions mt-4">
-      <a href="https://wa.me/55SEUNUMERO" class="btn btn-outline-light">
-        Agendar Tattoo
-      </a>
-      <a href="https://instagram.com/gvngtattoo" class="btn btn-link text-light">
-        Instagram
-      </a>
+      <a href="https://wa.me/5519997366901" class="btn">Agendar Tattoo</a>
+      <a href="https://www.instagram.com/tatuador_henriq/" class="btn">Instagram</a>
     </div>
   </div>
 
