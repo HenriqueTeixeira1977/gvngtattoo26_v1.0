@@ -53,7 +53,8 @@
 
   <div class="bg"></div>
   <div class="overlay"></div>
-
+  
+  <!-- TEXTOS  --> 
   <div class="content text-center">
     <a class="navbar-brand fw-bold" href="/index.php">
       <img src="assets/img/logotipos/logo5.png" 
@@ -66,33 +67,37 @@
     <p class="mt-4">
       Nosso site está em desenvolvimento. Faltam...
     </p>
-
+    
     <!-- COUNTER  -->
     <div class="countdown mt-5">
+      <!-- DAYS  -->
       <div class="time-box">
         <span id="days">30</span>
         <small>Dias</small>
       </div>
+      <!-- HOURS  -->
       <div class="time-box">
         <span id="hours">00</span>
         <small>Horas</small>
       </div>
+      <!-- MINUTES  -->
       <div class="time-box">
         <span id="minutes">00</span>
         <small>Min</small>
       </div>
+      <!-- SECONDS  -->
       <div class="time-box">
         <span id="seconds">00</span>
         <small>Seg</small>
       </div>
     </div>
-
+    
+    <!-- BOTÕES  -->
     <div class="actions mt-4">
       <a href="https://wa.me/5519997366901" class="btn">Agendar Tattoo</a>
       <a href="https://www.instagram.com/tatuador_henriq/" class="btn">Instagram</a>
     </div>
   </div>
-
 </section>
 
 <script src="assets/js/coming-soon.js"></script>
