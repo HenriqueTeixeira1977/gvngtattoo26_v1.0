@@ -31,7 +31,6 @@ section h2 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
   font-weight: 100;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -95,7 +94,6 @@ a:hover {
   width: 100%;
   left: 0;
 }
-
 .navbar.scrolled {
   height: 90px;
   background: rgb(26, 26, 26) !important;
@@ -176,28 +174,42 @@ a:hover {
    ESTILOS CAROUSEL + PARALLAX
 ========================= */
 
-#estilos-carousel {
-  background: #000000;
+#estilos-carousel { background-color:  #fd0000;
   overflow: hidden;
-}
-
-.estilosSwiper {
-  width: 100%;
-  height: 50vh;
-}
-
-.estilo-slide {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.estilosSwiper {background-color: #25d366;
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+}
+.estilo-slide { background-color: #fbff00;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
 
   /* PARALLAX */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 /* Overlay escuro */
 .estilo-slide .overlay {
   position: absolute;
@@ -208,41 +220,38 @@ a:hover {
   );
   z-index: 1;
 }
-
 /* Conteúdo */
 .estilo-slide .content {
   position: relative;
   z-index: 2;
   max-width: 720px;
-  padding: 20px;
+  padding: 0px;
 }
-
 .estilo-slide h2 {
   font-size: 3rem;
   letter-spacing: 3px;
   text-shadow: 0 0 25px rgba(255,255,255,0.2);
 }
-
 .estilo-slide p {
   font-size: 1.1rem;
   color: #b3b3b3;
   margin: 20px 0;
 }
-
 /* Swiper */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff;
+  color: #d8d8d8;
 }
-
 .swiper-pagination-bullet {
   background: #fff;
   opacity: 0.4;
 }
-
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -390,7 +399,7 @@ a:hover {
   background-attachment: fixed;
   min-height: 150px;
   border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.774);
 }
 .parallax h2{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -400,7 +409,7 @@ a:hover {
 
 /*  CTA FINAL  */
 .ctafinal{
-  background-color: #777777;
+  background-color: #000000;
   text-align: center;
 }
 
