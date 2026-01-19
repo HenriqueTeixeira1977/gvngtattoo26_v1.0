@@ -8,7 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /*  font-family: 'Helvetica Neue', Arial, sans-serif;*/
   /*  font-family: 'Roboto', sans-serif; */
   background: #000;
   color: #fff;
@@ -29,7 +30,8 @@ section h2 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   font-weight: 100;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -390,7 +392,21 @@ a:hover {
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.6);
 }
+.parallax h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+}
 
+/*  CTA FINAL  */
+.ctafinal{
+  background-color: #777777;
+  text-align: center;
+}
+
+.ctafinal .container h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
 
 /* FAQ - Accordion */
 .accordion-button {
@@ -407,25 +423,7 @@ a:hover {
   color: #bbb;
 }
 
-/*  CONTATO  */
-#contato {
-  background-color: rgb(163, 163, 163);
-}#contato .container{
-  background-color: rgba(255, 0, 0, 0);
-  padding: 100px 0;
-}
-#contato .container 
 
-
-/* FORMULÁRIO */
-form input, form textarea {
-  transition: all 0.3s ease;
-}
-form input:focus, form textarea:focus {
-  border-color: #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
-  outline: none;
-}
 
 /* LOCALIZAÇÃO - MAPA */
 #localizacao {background-color: rgba(255, 0, 0, 0);
@@ -537,7 +535,7 @@ footer a{
     position: relative;
 }
 .floating-btn.top {
-    background: rgba(122, 122, 122, 0.589);
+    background: rgba(122, 122, 122, 0.73);
     opacity: 0;
     pointer-events: none;
     transform: translateY(15px) scale(.9);

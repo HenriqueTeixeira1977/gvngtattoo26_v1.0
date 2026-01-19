@@ -1,0 +1,218 @@
+/* ===============================
+   CONTATO – ESTILO PROFISSIONAL
+   =============================== */
+
+#contato {
+  /*background: linear-gradient(
+    180deg,
+    #0b0b0b 0%,
+    #111111 50%,
+    #0b0b0b 100%
+  );*/
+  background-color: rgb(0, 0, 0);
+  height: 90vh;
+  color: #efefef;
+}
+
+/* Título */
+#contato #title h2 {
+  letter-spacing: 0.12em;
+  font-weight: 100;
+  text-align: center;
+}
+
+#contato #title h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ffffff;
+  margin: 16px auto 0;
+  opacity: 0.8;
+}
+
+#contato .container{background-color: rgba(255, 255, 0, 0.064);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90%;
+  padding: 10px;
+  border: #fff700 1px solid;
+  border-radius: 10px;
+}
+
+/* ===============================
+   BLOCO DE INFORMAÇÕES
+   =============================== */
+#contato #infos{  background-color: rgba(0, 128, 0, 0);
+  height: 95%;
+  padding: 5px;
+  border: #fff700 1px solid;
+}
+#contato #txt { background-color: #ff000000 !important;
+  height: 100%;
+}
+#contato #txt-title{ background-color: rgba(0, 128, 0, 0);
+  margin-bottom: 30px;
+  padding: 10px;
+  color: #c7c7c7;
+  border: #fff700 1px solid;
+  border-radius: 10px;
+}
+#contato #infos #txt #box{ background-color: #2029da00;
+  padding: 10px;
+  border: #fff700 1px solid;
+  border-radius: 10px;
+}
+#contato h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+#contato p,
+#contato a {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c7c7c7;
+}
+#contato a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   FORMULÁRIO
+   =============================== */
+#contato #form{background-color: #2029da;
+  width: 50%;
+  height: 95%;
+  padding: 5px;
+  border: #ff9100 1px solid;
+}
+#contato form {background-color: rgb(0, 255, 76);
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contato form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+/* Labels */
+#contato .form-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #cfcfcf;
+}
+/* Inputs e textarea */
+#contato .form-control {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+/* Placeholder */
+#contato .form-control::placeholder {
+  color: #777;
+}
+/* Focus */
+#contato .form-control:focus {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.15);
+}
+/* Textarea */
+#contato textarea {
+  resize: none;
+}
+
+/* ===============================
+   BOTÃO
+   =============================== */
+
+#contato .btn {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+#contato .btn-light {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+#contato .btn-light:hover {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* ===============================
+   RESPONSIVO
+   =============================== */
+
+@media (max-width: 991px) {
+  #contato {background-color: #da5520;
+    width: 100%;
+    height: 100%;
+  }  
+  #contato h2 {
+    font-size: 1.5rem;
+  }
+  #contato .btn {
+    font-size: 0.8rem;
+  }
+  #contato #form{background-color: #00ff15;
+    width: 100%;
+    padding: 5px;
+    border: #ff9100 1px solid;
+  }
+  #contato,
+  #contato form {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contato{background-color: #2029da;
+    width: 100%;
+    height: 100%;
+  }  
+  #contato h2 {
+    font-size: 2rem;
+  }
+  #contato .btn {
+    font-size: 0.8rem;
+  }
+  #contato #form{background-color: #ff00a2;
+    width: 100%;
+    padding: 5px;
+    border: #ff9100 1px solid;
+  }
+
+}
