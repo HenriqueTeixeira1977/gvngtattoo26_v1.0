@@ -3,14 +3,13 @@
    =============================== */
 
 #contato {
-  /*background: linear-gradient(
+  background: linear-gradient(
     180deg,
     #0b0b0b 0%,
     #111111 50%,
     #0b0b0b 100%
-  );*/
-  background-color: rgb(0, 0, 0);
-  height: 90vh;
+  );
+  height: 100vh;
   color: #efefef;
 }
 
@@ -20,7 +19,6 @@
   font-weight: 100;
   text-align: center;
 }
-
 #contato #title h2::after {
   content: "";
   display: block;
@@ -30,15 +28,15 @@
   margin: 16px auto 0;
   opacity: 0.8;
 }
-
-#contato .container{background-color: rgba(255, 255, 0, 0.064);
+/* CONTAINER*/
+#contato .container{background-color: rgba(255, 255, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: 90%;
   padding: 10px;
-  border: #fff700 1px solid;
+  border: #e7e7e700 1px solid;
   border-radius: 10px;
 }
 
@@ -48,7 +46,7 @@
 #contato #infos{  background-color: rgba(0, 128, 0, 0);
   height: 95%;
   padding: 5px;
-  border: #fff700 1px solid;
+  border: #e7e7e700 1px solid;
 }
 #contato #txt { background-color: #ff000000 !important;
   height: 100%;
@@ -57,12 +55,12 @@
   margin-bottom: 30px;
   padding: 10px;
   color: #c7c7c7;
-  border: #fff700 1px solid;
+  border: #e7e7e705 1px solid;
   border-radius: 10px;
 }
 #contato #infos #txt #box{ background-color: #2029da00;
   padding: 10px;
-  border: #fff700 1px solid;
+  border: #e7e7e7 1px solid;
   border-radius: 10px;
 }
 #contato h5 {
@@ -81,34 +79,16 @@
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===============================
    FORMULÁRIO
    =============================== */
-#contato #form{background-color: #2029da;
+#contato #form{background-color: #2029da00;
   width: 50%;
   height: 95%;
   padding: 5px;
-  border: #ff9100 1px solid;
+  border: #ff910000 1px solid;
 }
-#contato form {background-color: rgb(0, 255, 76);
+#contato form {background-color: rgba(0, 255, 76, 0);
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -159,13 +139,11 @@
   font-size: 0.85rem;
   transition: all 0.3s ease;
 }
-
 #contato .btn-light {
   background-color: #ffffff;
   color: #000000;
   border: none;
 }
-
 #contato .btn-light:hover {
   background-color: #000000;
   color: #ffffff;
@@ -177,7 +155,7 @@
    =============================== */
 
 @media (max-width: 991px) {
-  #contato {background-color: #da5520;
+  #contato {background-color: #da552000;
     width: 100%;
     height: 100%;
   }  
@@ -187,10 +165,10 @@
   #contato .btn {
     font-size: 0.8rem;
   }
-  #contato #form{background-color: #00ff15;
+  #contato #form{background-color: #00ff1500;
     width: 100%;
     padding: 5px;
-    border: #ff9100 1px solid;
+    border: #e7e7e700 1px solid;
   }
   #contato,
   #contato form {
@@ -199,7 +177,7 @@
 }
 
 @media (max-width: 576px) {
-  #contato{background-color: #2029da;
+  #contato{background-color: #2029da00;
     width: 100%;
     height: 100%;
   }  
@@ -209,10 +187,10 @@
   #contato .btn {
     font-size: 0.8rem;
   }
-  #contato #form{background-color: #ff00a2;
+  #contato #form{background-color: #ff00a200;
     width: 100%;
     padding: 5px;
-    border: #ff9100 1px solid;
+    border: #e7e7e700 1px solid;
   }
 
 }

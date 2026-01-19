@@ -105,7 +105,7 @@
           <textarea
             id="mensagem"
             name="mensagem"
-            rows="4"
+            rows="3"
             class="form-control bg-black text-white border-secondary"
             placeholder="Escreva sua mensagem..."
             required
