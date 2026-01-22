@@ -86,7 +86,7 @@ a:hover {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background: #fbff00;
+  background: #ffffff;
   transition: all 0.3s ease;
 }
 .nav-link:hover::after,
@@ -169,12 +169,37 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+/* =========================
+  GALERIA PREMIUM
+========================= */
+
+.galeria-item {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+.galeria-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(207, 207, 207, 0.2);
+}
+.overlay-galeria {
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  transition: all 0.5s ease;
+}
+.overlay-galeria p {
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+.galeria-item:hover .overlay-galeria p {
+  transform: translateY(0);
+}
+
 
 /* =========================
    ESTILOS CAROUSEL + PARALLAX
 ========================= */
 
-#estilos-carousel { background-color:  #fd0000;
+#estilos-carousel { background-color:  #474747;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -184,13 +209,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50vh;
   margin: 0;
   padding: 0;
 }
 .estilosSwiper {background-color: #25d366;
   width: 100%;
-  height: 70vh;
 }
 
 /* Overlay escuro */
@@ -223,56 +246,15 @@ a:hover {
 /* Swiper */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #d8d8d8;
+  color: #d8d8d841;
 }
 .swiper-pagination-bullet {
-  background: #fff;
+  background: #ffffff6b;
   opacity: 0.4;
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
-
-
-
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .estilo-slide {
-    background-attachment: scroll;
-  }
-
-  .estilosSwiper {
-    height: 65vh;
-  }
-
-  .estilo-slide h2 {
-    font-size: 2rem;
-  }
-
-  .estilo-slide p {
-    font-size: 1rem;
-  }
-}
-
-
-
-
-
-
-
-/*
-#estilos{
-  background-color: rgb(0, 0, 0);
-}
-#estilos .container{
-  background-color: rgba(0, 255, 64, 0);
-    padding-top: 70px;
-}
-*/
-
-
-
 
 
 
@@ -285,7 +267,6 @@ a:hover {
   background-color: rgba(51, 255, 0, 0);
   padding-top: 70px;
 }
-
 .swiper-container {
   width: 100%;
   height: 70vh;
@@ -318,27 +299,7 @@ a:hover {
   color: #ccc;
 }
 
-/* Galeria Premium */
-.galeria-item {
-  overflow: hidden;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-}
-.galeria-item:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(207, 207, 207, 0.2);
-}
-.overlay-galeria {
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-  transition: all 0.5s ease;
-}
-.overlay-galeria p {
-  transform: translateY(20px);
-  transition: transform 0.4s ease;
-}
-.galeria-item:hover .overlay-galeria p {
-  transform: translateY(0);
-}
+
 
 /* DIFERENCIAIS / CARDS */
 .hover-shadow:hover {
@@ -365,7 +326,7 @@ a:hover {
 
 /* Parallax */
 .parallax {
-  background-image: url('../img/parallax/parallax1.png'); /* troque pela sua imagem */
+  background-image: url('../img/parallax/parallax2.png'); /* troque pela sua imagem */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -375,20 +336,39 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-/* PARALLAX IMAGE */
-.parallax-img {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 150px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.774);
+
+.parallax .parallaz-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.815),
+    rgba(0, 0, 0, 0.747)
+  );
+  z-index: 999;
 }
 .parallax h2{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  CTA FINAL  */
 .ctafinal{
@@ -538,15 +518,11 @@ footer a{
     pointer-events: auto;
     transform: translateY(0) scale(1);
 }
-
-
 /* HOVER */
 .floating-btn:hover {
     transform: scale(1.08);
     filter: brightness(1.1);
 }
-
-
 /* TOOLTIP */
 .floating-btn::after {
     content: attr(data-tooltip);
@@ -578,11 +554,6 @@ footer a{
 
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  .hero-content h1 { font-size: 3rem; }
-  h2.display-5 { font-size: 2.5rem; }
-  section { padding: 80px 0; }
-} 
 
 @media (max-width: 992px) {
   .hero-content h1 {
@@ -594,10 +565,40 @@ footer a{
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 3rem; }
-  h2.display-5 { font-size: 2.5rem; }
-  section { padding: 80px 0; }
-} 
+  .hero-content h1 { 
+    font-size: 3rem; 
+  }
+  h2.display-5 { 
+    font-size: 2.5rem; 
+  }
+  section { 
+    padding: 80px 0; 
+  }
+  .display-2 { 
+    font-size: 3.5rem !important; 
+  }
+  .lead.fs-3 { 
+    font-size: 1.3rem !important; 
+  }
+  .estilo-slide {
+    background-attachment: scroll;
+  }
+  .estilosSwiper {
+    height: 65vh;
+  }
+  .estilo-slide h2 {
+    font-size: 2rem;
+  }
+  .estilo-slide p {
+    font-size: 1rem;
+  }
+  /* Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(255, 0, 0, 0);
+    color: #ffffff2f;
+  }
+}
 
 @media (max-width: 576px) {
   .hero-content h1 {
@@ -611,10 +612,3 @@ footer a{
     left: 5%;
   }
 }
-
-@media (max-width: 768px) {
-  .display-2 { 
-    font-size: 3.5rem !important; }
-  .lead.fs-3 { font-size: 1.3rem !important; }
-}
-

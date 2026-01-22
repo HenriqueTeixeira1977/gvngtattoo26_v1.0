@@ -1,0 +1,209 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #f5f5f5;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: #000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-custom .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.navbar-custom ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-custom ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom ul li a:hover {
+  color: #ff6600;
+}
+
+/* Banner */
+.banner {
+  background-image: url('bg1.png'); /* sua imagem */
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh; /* ocupa quase toda a tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* texto alinhado à esquerda */
+  padding: 0 10%;
+  color: #f5f5f5;
+}
+
+.banner h1 {
+  font-size: 4rem; /* letras bem grandes */
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 700px; /* controla largura do texto */
+  line-height: 1.2;
+}
+
+.cta-button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+}
+
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.features .item i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+
+/* Portfólio */
+#portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Sobre o artista */
+#sobre {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#sobre img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+#sobre .bio {
+  flex: 1;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+/* Contato */
+#contato {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+}
+
+#contato h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #bbb;
+}
+
+form button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e65c00;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}

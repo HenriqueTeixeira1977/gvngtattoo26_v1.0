@@ -10,7 +10,7 @@
                 <img src="assets/img/galeria_2.jpg" class="img-fluid rounded">
             </div> 
             <div class="col-md-4">
-                <img src="assets/img/galeria_3.jpg" class="img-fluid rounded">
+                <img src="assets/img/galeria_1.jpg" class="img-fluid rounded">
             </div> 
         </div> 
     </div> 

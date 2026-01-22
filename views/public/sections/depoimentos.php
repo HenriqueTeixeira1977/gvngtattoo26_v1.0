@@ -10,9 +10,9 @@
         <div class="swiper-slide">
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/cliente1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 1">
+              <img src="assets/img/depoimentos/cliente1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 1">
               <div>
-                <h5 class="mb-0">Ana Souza</h5>
+                <h5 class="mb-0">Douglas Vieira</h5>
                 <small class="text-muted">Cliente desde 2022</small>
               </div>
             </div>
@@ -27,7 +27,7 @@
         <div class="swiper-slide">
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/cliente2.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 2">
+              <img src="assets/img/depoimentos/cliente2.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 2">
               <div>
                 <h5 class="mb-0">Carlos Mendes</h5>
                 <small class="text-muted">Cliente desde 2023</small>
@@ -44,9 +44,9 @@
         <div class="swiper-slide">
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/cliente3.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
+              <img src="assets/img/depoimentos/cliente3.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
               <div>
-                <h5 class="mb-0">Juliana Lima</h5>
+                <h5 class="mb-0">Gabriel Machado</h5>
                 <small class="text-muted">Cliente desde 2021</small>
               </div>
             </div>
@@ -61,9 +61,9 @@
         <div class="swiper-slide">
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/cliente4.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
+              <img src="assets/img/depoimentos/cliente4.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
               <div>
-                <h5 class="mb-0">Juliana Lima</h5>
+                <h5 class="mb-0">Felipe Sousa</h5>
                 <small class="text-muted">Cliente desde 2021</small>
               </div>
             </div>
@@ -78,9 +78,9 @@
         <div class="swiper-slide">
           <div class="card bg-black text-light border-0 shadow-lg p-4">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/cliente5.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 5">
+              <img src="assets/img/depoimentos/cliente5.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 5">
               <div>
-                <h5 class="mb-0">Juliana Lima</h5>
+                <h5 class="mb-0">Rafael Silva</h5>
                 <small class="text-muted">Cliente desde 2021</small>
               </div>
             </div>
