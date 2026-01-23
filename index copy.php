@@ -22,6 +22,8 @@
 <?php include 'views/public/sections/ctafinal.php'; ?>
 <!--  PARALLAX -->
 <?php include 'views/public/sections/parallax.php'; ?>
+<!--  PARALLAX -->
+<?php include 'views/public/sections/faq.php'; ?>
 
 
 

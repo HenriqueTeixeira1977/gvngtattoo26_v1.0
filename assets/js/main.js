@@ -64,30 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
             easing: "ease-in-out"
         });
     }
-
-
-    // SWIPER
-    if (document.querySelector(".mySwiper")) {
-        new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                992: { slidesPerView: 3 }
-            }
-        });
-    }
-
 });
+
+
+
+//  FAQ
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+
+      faqItems.forEach(i => i.classList.remove('active'));
+
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+});
+
+
+
+
+
 
 
 // Back to Top Button
@@ -111,6 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
 
 
 

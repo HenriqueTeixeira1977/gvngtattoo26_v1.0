@@ -1,8 +1,10 @@
 
 <!-- ESTILOS / CAROUSEL COM PARALLAX -->
 <section id="estilos-carousel">
-  <div class="container-fluid p-0">
-    <div class="swiper estilosSwiper" data-aos="fade-up">
+
+  <div class="container-fluid">
+
+    <div class="swiper estilosSwiper">
 
       <div class="swiper-wrapper">
 
