@@ -91,17 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const depoimentosSwiper = new Swiper('#depoimentos .mySwiper', {
   loop: true,
   grabCursor: true,
-  spaceBetween: 30,
   centeredSlides: true,
 
   slidesPerView: 1,
+  spaceBetween: 40,
+
+  speed: 1200,
+  effect: 'slide',
 
   autoplay: {
-    delay: 4500,
+    delay: 6000,
     disableOnInteraction: false,
   },
-
-  speed: 900,
 
   pagination: {
     el: '#depoimentos .swiper-pagination',
@@ -120,25 +121,9 @@ const depoimentosSwiper = new Swiper('#depoimentos .mySwiper', {
     1200: {
       slidesPerView: 3,
     }
-  },
-
-  on: {
-    slideChangeTransitionStart() {
-      document
-        .querySelectorAll('#depoimentos .swiper-slide')
-        .forEach(slide => slide.classList.remove('is-active'));
-    },
-
-    slideChangeTransitionEnd() {
-      const activeSlide = document.querySelector(
-        '#depoimentos .swiper-slide-active'
-      );
-      if (activeSlide) {
-        activeSlide.classList.add('is-active');
-      }
-    }
   }
 });
+
 
 
 

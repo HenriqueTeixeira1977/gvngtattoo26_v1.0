@@ -13,6 +13,9 @@
 <!--  ARTISTA -->
 <?php include 'views/public/sections/artista.php'; ?>
 
+<!--  PARALLAX -->
+<?php include 'views/public/sections/faq.php'; ?>
+
 <!--  CONTATO -->
 <?php include 'views/public/sections/contato.php'; ?>  
 

@@ -22,7 +22,7 @@
 <?php include 'views/public/sections/ctafinal.php'; ?>
 <!--  PARALLAX -->
 <?php include 'views/public/sections/parallax.php'; ?>
-<!--  PARALLAX -->
+<!--  FAQ  -->
 <?php include 'views/public/sections/faq.php'; ?>
 
 
