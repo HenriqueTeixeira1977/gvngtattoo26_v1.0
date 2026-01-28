@@ -298,6 +298,184 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   DEPOIMENTOS – PREMIUM
+============================ */
+
+#depoimentos {
+  position: relative;
+  background: radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.03),
+    #000 60%
+  );
+  overflow: hidden;
+}
+/* TÍTULO */
+#depoimentos h2 {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+/* SWIPER */
+#depoimentos .swiper {
+  padding-bottom: 80px;
+}
+/* CARD */
+#depoimentos .card {
+  position: relative;
+  height: 100%;
+  border-radius: 22px;
+  background: linear-gradient(
+    145deg,
+    rgba(20,20,20,0.95),
+    rgba(5,5,5,0.95)
+  );
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,.65),
+    inset 0 0 0 1px rgba(255,255,255,.04);
+  transition: 
+    transform .6s ease,
+    box-shadow .6s ease;
+}
+/* HOVER CARD */
+#depoimentos .swiper-slide-active .card,
+#depoimentos .card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow:
+    0 40px 90px rgba(0,0,0,.85),
+    0 0 25px rgba(255,255,255,.06),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+}
+/* AVATAR */
+#depoimentos img {
+  border: 2px solid rgba(255,255,255,.15);
+  padding: 3px;
+  background: #000;
+}
+/* NOME */
+#depoimentos h5 {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+/* SUBTÍTULO */
+#depoimentos small {
+  letter-spacing: 1px;
+  opacity: .6;
+}
+/* TEXTO */
+#depoimentos p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: .85;
+}
+/* ESTRELAS */
+#depoimentos .text-warning {
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+  opacity: .9;
+}
+/* PAGINAÇÃO */
+#depoimentos .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,.25);
+  opacity: 1;
+  transition: all .4s ease;
+}
+#depoimentos .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 28px;
+  border-radius: 10px;
+}
+/* NAVEGAÇÃO */
+#depoimentos .swiper-button-next,
+#depoimentos .swiper-button-prev {
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.15);
+  transition: all .4s ease;
+}
+#depoimentos .swiper-button-next:hover,
+#depoimentos .swiper-button-prev:hover {
+  background: rgba(255,255,255,.15);
+  transform: scale(1.1);
+}
+/* REMOVE ÍCONE GRANDE PADRÃO */
+#depoimentos .swiper-button-next::after,
+#depoimentos .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  #depoimentos h2 {
+    letter-spacing: 2px;
+  }
+
+  #depoimentos .card {
+    border-radius: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  PORTIFOLIO  */
 #portfolio {
   background-color: rgba(255, 0, 0, 0);
@@ -394,9 +572,6 @@ a:hover {
 
 }
 
-
-
-
 /* FAQ SECTION */
 .faq-section {
   background: #000;
@@ -452,34 +627,23 @@ a:hover {
   transition: max-height .6s ease, opacity .4s ease;
   opacity: 0;
 }
-
 .faq-item.active .faq-answer {
   max-height: 500px; /* valor alto e seguro */
   opacity: 1;
 }
-
-
 .faq-answer p {
   padding-bottom: 25px;
   line-height: 1.7;
   opacity: .75;
 }
-
 /* ACTIVE */
 .faq-item.active .faq-answer {
   max-height: 300px;
 }
-
 .faq-item.active .faq-question .icon {
   transform: rotate(45deg);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .faq-question {
-    font-size: 1rem;
-  }
-}
 
 
 /* LOCALIZAÇÃO - MAPA */
@@ -687,6 +851,12 @@ footer a{
   .swiper-button-prev {
     background-color: rgba(255, 0, 0, 0);
     color: #ffffff2f;
+  
+  }
+
+  /*  FAQ  */
+  .faq-question {
+    font-size: 1rem;
   }
 }
 

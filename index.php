@@ -3,14 +3,19 @@
 
 <!--  GALERIA -->
 <?php include 'views/public/sections/galeria.php'; ?>
+
 <!--  PARALLAX -->
 <?php include 'views/public/sections/parallax.php'; ?>
+
 <!--  DEPOIMENTOS -->
 <?php include 'views/public/sections/depoimentos.php'; ?>
+
 <!--  ARTISTA -->
 <?php include 'views/public/sections/artista.php'; ?>
+
 <!--  CONTATO -->
 <?php include 'views/public/sections/contato.php'; ?>  
+
 <!--  LOCALIZAÇÃO -->
 <?php include 'views/public/sections/localizacao.php'; ?>
 

@@ -87,6 +87,58 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// DEPOIMENTOS
+const depoimentosSwiper = new Swiper('#depoimentos .mySwiper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+
+  slidesPerView: 1,
+
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+
+  speed: 900,
+
+  pagination: {
+    el: '#depoimentos .swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '#depoimentos .swiper-button-next',
+    prevEl: '#depoimentos .swiper-button-prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+
+  on: {
+    slideChangeTransitionStart() {
+      document
+        .querySelectorAll('#depoimentos .swiper-slide')
+        .forEach(slide => slide.classList.remove('is-active'));
+    },
+
+    slideChangeTransitionEnd() {
+      const activeSlide = document.querySelector(
+        '#depoimentos .swiper-slide-active'
+      );
+      if (activeSlide) {
+        activeSlide.classList.add('is-active');
+      }
+    }
+  }
+});
 
 
 
