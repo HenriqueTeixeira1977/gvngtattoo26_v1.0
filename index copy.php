@@ -15,7 +15,7 @@
 <!--  DEPOIMENTOS -->
 <?php include 'views/public/sections/depoimentos.php'; ?>
 <!--  LOJA -->
-<?php include 'views/public/sections/loja.php'; ?>
+<?php include 'views/public/sections/store.php'; ?>
 <!--  ARTISTA -->
 <?php include 'views/public/sections/artista.php'; ?>
 <!--  CTA FINAL -->

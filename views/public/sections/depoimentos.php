@@ -1,4 +1,4 @@
-<section id="depoimentos" class="py-5 bg-dark text-light">
+<section id="depoimentos" class="text-light">
   <div class="container" data-aos="fade-up">
     <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
     
@@ -8,7 +8,7 @@
         
         <!-- Depoimento 1 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 shadow-lg p-4">
+          <div class="card bg-black text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 1">
               <div>
@@ -25,7 +25,7 @@
 
         <!-- Depoimento 2 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 shadow-lg p-4">
+          <div class="card bg-black text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente2.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 2">
               <div>
@@ -33,7 +33,7 @@
                 <small class="text-muted">Cliente desde 2023</small>
               </div>
             </div>
-            <p class="lead fst-italic">"Minha tatuagem ficou perfeita! Recomendo para quem busca qualidade e exclusividade."</p>
+            <p class="lead fst-italic">"Minha tatuagem ficou perfeita! Recomendo para quem busca qualidade."</p>
             <div class="text-warning">
               ★★★★★
             </div>
@@ -42,7 +42,7 @@
 
         <!-- Depoimento 3 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 shadow-lg p-4">
+          <div class="card bg-black text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente3.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
               <div>
@@ -50,7 +50,7 @@
                 <small class="text-muted">Cliente desde 2021</small>
               </div>
             </div>
-            <p class="lead fst-italic">"O GVNG Tattoo superou minhas expectativas. Atendimento impecável e resultado maravilhoso."</p>
+            <p class="lead fst-italic">"O GVNG Tattoo superou minhas expectativas. Atendimento impecável."</p>
             <div class="text-warning">
               ★★★★★
             </div>
@@ -59,7 +59,7 @@
         
         <!-- Depoimento 4 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 shadow-lg p-4">
+          <div class="card bg-black text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente4.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 3">
               <div>
@@ -76,7 +76,7 @@
         
         <!-- Depoimento 5 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 shadow-lg p-4">
+          <div class="card bg-black text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente5.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 5">
               <div>

@@ -3,6 +3,8 @@
 
 <!--  GALERIA -->
 <?php include 'views/public/sections/galeria.php'; ?>
+<!--  LOJA -->
+<?php include 'views/public/sections/store.php'; ?>
 
 <!--  PARALLAX -->
 <?php include 'views/public/sections/parallax.php'; ?>
@@ -18,7 +20,6 @@
 
 <!--  CONTATO -->
 <?php include 'views/public/sections/contato.php'; ?>  
-
 <!--  LOCALIZAÇÃO -->
 <?php include 'views/public/sections/localizacao.php'; ?>
 

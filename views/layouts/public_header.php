@@ -76,7 +76,7 @@
                 <li class="nav-item"><a class="nav-link" href="#loja">Loja</a></li>
                 <li class="nav-item"><a class="nav-link" href="#artista">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://wa.me/5519997339148" target="_blank">19 99733-9148</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://wa.me/5519997366901" target="_blank">19 99733-9148</a></li>
             </ul>
         </div>  
     </div>

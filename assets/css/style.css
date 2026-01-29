@@ -154,6 +154,18 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================
   GALERIA PREMIUM
 ========================= */
@@ -178,6 +190,183 @@ a:hover {
 .galeria-item:hover .overlay-galeria p {
   transform: translateY(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   SEÇÕES – PADRÃO GVNG
+========================= */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.section-header h2 {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  margin-top: 14px;
+  opacity: .55;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   STORE – ALINHADA AO HERO
+========================= */
+
+.store-section {
+  background: radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.04),
+    #000 70%
+  );
+  padding: 140px 0;
+}
+
+/* ITEM */
+.store-item {
+  text-align: center;
+}
+
+/* MEDIA */
+.store-media {background-color: rgba(255, 255, 0, 0);
+  height: 350px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 30px 60px rgba(34, 34, 34, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0);
+}
+
+/* IMAGE */
+.store-media img {background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 350px;
+  transition: transform 1.2s ease;
+}
+
+/* HOVER IMAGE */
+.store-item:hover img {
+  transform: scale(1.06);
+}
+
+/* INFO */
+.store-info {
+  margin-top: 18px;
+}
+
+/* TITLE */
+.store-info h3 {
+  font-size: .95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.store-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-size: .5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.5);
+  transition: all .4s ease;
+}
+
+/* HOVER */
+.store-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .store-section {
+    padding: 110px 0;
+  }
+
+  .section-header {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ================================
@@ -332,14 +521,24 @@ a:hover {
 ============================ */
 
 #depoimentos {
+  width: 100vw;
   position: relative;
   background: radial-gradient(
     circle at top,
-    rgba(255,255,255,0.03),
-    #000 60%
+    rgba(255, 255, 255, 0.075),
+    #000 50%
   );
   overflow: hidden;
 }
+#depoimentos .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 140px 0;
+  background-color: rgba(0, 255, 21, 0);
+}
+
 /* TÍTULO */
 #depoimentos h2 {
   font-size: clamp(2.2rem, 5vw, 3rem);
@@ -348,36 +547,32 @@ a:hover {
   margin-bottom: 70px;
 }
 /* SWIPER */
-#depoimentos .swiper {
-  padding-bottom: 80px;
+#depoimentos .swiper {background-color: rgba(255, 0, 0, 0);
+  width: 100vw;
+  padding: 80px 10px;
 }
 /* CARD */
 #depoimentos .card {
   position: relative;
-  height: 100%;
-  border-radius: 22px;
+  height: 250px;
+  border-radius: 10px;
   background: linear-gradient(
     145deg,
-    rgba(20,20,20,0.95),
-    rgba(5,5,5,0.95)
+    rgba(90, 90, 90, 0.95),
+    rgba(0, 0, 0, 0.95)
   );
-  backdrop-filter: blur(8px);
-  box-shadow:
-    0 30px 60px rgba(0,0,0,.65),
-    inset 0 0 0 1px rgba(255,255,255,.04);
-  transition: 
-    transform .6s ease,
-    box-shadow .6s ease;
 }
+
 /* HOVER CARD */
 #depoimentos .swiper-slide-active .card,
 #depoimentos .card:hover {
-  transform: translateY(-12px) scale(1.02);
+  transform: translateY(1px) scale(1);
   box-shadow:
-    0 40px 90px rgba(0,0,0,.85),
-    0 0 25px rgba(255,255,255,.06),
-    inset 0 0 0 1px rgba(255,255,255,.08);
+    0 10px 50px rgba(0, 0, 0, 0),
+    0 0 25px rgba(255, 255, 255, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0);
 }
+
 /* AVATAR */
 #depoimentos img {
   border: 2px solid rgba(255,255,255,.15);
@@ -396,7 +591,7 @@ a:hover {
 }
 /* TEXTO */
 #depoimentos p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.7;
   opacity: .85;
 }
@@ -426,14 +621,14 @@ a:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(255,255,255,.06);
-  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.15);
   transition: all .4s ease;
 }
 #depoimentos .swiper-button-next:hover,
 #depoimentos .swiper-button-prev:hover {
-  background: rgba(255,255,255,.15);
+  background: rgba(255, 255, 255, 0.062);
   transform: scale(1.1);
 }
 /* REMOVE ÍCONE GRANDE PADRÃO */
@@ -442,16 +637,7 @@ a:hover {
   font-size: 18px;
   font-weight: bold;
 }
-/* MOBILE */
-@media (max-width: 768px) {
-  #depoimentos h2 {
-    letter-spacing: 2px;
-  }
 
-  #depoimentos .card {
-    border-radius: 18px;
-  }
-}
 
 
 
@@ -517,6 +703,25 @@ a:hover {
   color: #ccc;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* DIFERENCIAIS / CARDS */
 .hover-shadow:hover {
   box-shadow: 0 12px 25px rgba(0,0,0,0.7);
@@ -539,6 +744,20 @@ a:hover {
   box-shadow: 0 20px 40px rgba(197, 197, 197, 0.192) !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* *************** PARALLAX ***************** */
 .parallax {
   background-image:
@@ -548,8 +767,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-  height: 50vh;
+  height: 30vh;
   color: #fff;
   display: flex;
   align-items: center;
@@ -559,9 +777,26 @@ a:hover {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
   font-size: 3rem;
-  text-align: center;
-  
+  text-align: center;  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  CTA FINAL  */
 .ctafinal{
   background-color: #000000;
@@ -571,6 +806,23 @@ a:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FAQ SECTION */
 .faq-section {
@@ -646,6 +898,18 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* LOCALIZAÇÃO - MAPA */
 #localizacao {background-color: rgba(255, 0, 0, 0);
   display: flex;
@@ -674,6 +938,26 @@ a:hover {
   border: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 footer {
   border-top: 1px solid #333;
@@ -685,6 +969,21 @@ footer p {
 footer a{
   color: rgb(85, 85, 85);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* BOTÕES FLUTUANTES */
@@ -725,6 +1024,16 @@ footer a{
     70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
     100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* VOLTAR AO TOPO */
@@ -792,12 +1101,47 @@ footer a{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ANIMAÇÕES ADICIONAIS */
 [data-aos] {
   transition-property: transform, opacity;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RESPONSIVIDADE */
@@ -853,6 +1197,32 @@ footer a{
     color: #ffffff2f;
   
   }
+
+
+
+
+  /*  DEPOIMENTOS  */
+  #depoimentos {
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+  }
+  #depoimentos h2 {
+    letter-spacing: 2px;
+  }
+  #depoimentos .container{background-color: rgba(255, 255, 0, 0.329);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #depoimentos .card {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+
+
+
 
   /*  FAQ  */
   .faq-question {
