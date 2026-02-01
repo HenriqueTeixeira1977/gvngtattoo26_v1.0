@@ -14,7 +14,7 @@
             <img src="assets/img/store/store1.png" alt="Logotipo GVNG">
           </div>
           <div class="store-info">
-            <h3>Logotipo GVNG</h3>
+            <h3>CAMISA BLACK GVNG</h3>
             <a href="https://wa.me/5519997366901" target="_blank" class="store-btn">COMPRAR</a>
           </div>
         </article>
@@ -26,7 +26,7 @@
             <img src="assets/img/store/store2.png" alt="Logotipo GVNG">
           </div>
           <div class="store-info">
-            <h3>Logotipo Black</h3>
+            <h3>CAMISA WHITE GVNG</h3>
             <a href="https://wa.me/5519997366901" target="_blank" class="store-btn">COMPRAR</a>
           </div>
         </article>
@@ -38,7 +38,7 @@
             <img src="assets/img/store/store3.png" alt="Moletom GVNG">
           </div>
           <div class="store-info">
-            <h3>Moletom GVNG</h3>
+            <h3>MOLETON DARK GVNG</h3>
             <a href="https://wa.me/5519997366901" target="_blank" class="store-btn">COMPRAR</a>
           </div>
         </article>
@@ -50,7 +50,7 @@
             <img src="assets/img/store/store4.png" alt="Moletom GVNG">
           </div>
           <div class="store-info">
-            <h3>Moletom Dark</h3>
+            <h3>MOLETOM WHITE GVNG</h3>
             <a href="https://wa.me/5519997366901" target="_blank" class="store-btn">COMPRAR</a>
           </div>
         </article>

@@ -2,7 +2,7 @@
 <?php include 'views/public/sections/coming-soon.php'; ?>
 
 <!--  GALERIA -->
-<?php include 'views/public/sections/galeria.php'; ?>
+<?php include 'views/public/sections/styles.php'; ?>
 <!--  LOJA -->
 <?php include 'views/public/sections/store.php'; ?>
 
