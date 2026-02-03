@@ -52,7 +52,14 @@
 
 <section class="coming-soon">
 
-  <div class="bg"></div>
+  <!-- Vídeo de fundo (loop, muted, autoplay) -->
+  <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" poster="assets/img/hero/poster_hero.jpg">
+    <source src="assets/videos/gvng_hero.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+
+
+  <!--  <div class="bg"></div>  -->
   <div class="overlay"></div>
   
   <!-- TEXTOS  --> 
