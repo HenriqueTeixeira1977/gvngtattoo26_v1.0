@@ -201,9 +201,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+//  ABOUT/SOBRE***********************************************
 
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.stat-number');
+  let started = false;
 
+  const animateCounters = () => {
+    if (started) return;
 
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const duration = 1200;
+      const startTime = performance.now();
+
+      const update = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(progress * target);
+
+        counter.textContent = value;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target;
+        }
+      };
+
+      requestAnimationFrame(update);
+    });
+
+    started = true;
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      animateCounters();
+      observer.disconnect();
+    }
+  }, { threshold: 0.4 });
+
+  observer.observe(document.querySelector('.about-stats'));
+});
 
 
 

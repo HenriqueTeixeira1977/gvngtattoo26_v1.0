@@ -1,3 +1,6 @@
+<!--  HEADER / NAV  -->
+<?php include 'views/layouts/public_header.php'; ?>
+
 <!--  HERO COUNTER -->
 <?php include 'views/public/sections/coming-soon.php'; ?>
 
@@ -15,6 +18,9 @@
 
 <!--  PARALLAX -->
 <?php include 'views/public/sections/faq.php'; ?>
+
+<!--  SOBRE -->
+<?php include 'views/public/sections/artista.php'; ?>
 
 
 <!--  CONTATO -->

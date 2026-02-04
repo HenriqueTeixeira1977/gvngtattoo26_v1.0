@@ -70,10 +70,10 @@
 
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#estilos-carousel    ">Estilos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portifólio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#loja">Loja</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#styles">Estilos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#loja">Store</a></li>
+                <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#artista">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://wa.me/5519997366901" target="_blank">19 99733-9148</a></li>

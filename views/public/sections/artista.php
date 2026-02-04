@@ -1,30 +1,68 @@
-<!-- SOBRE O ARTISTA -->
-<section id="artista" class="py-5" data-aos="fade-up">
+<link rel="stylesheet" href="assets/css/style.css">
+<section id="artista" class="about-premium">
   <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-md-5">
-        <img src="assets/img/sobre/sobre.png" class="img-fluid rounded" alt="Carlos Henrique">
+    <div class="row align-items-center g-5">
+
+      <!-- IMAGEM -->
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="about-image">
+          <img src="assets/img/sobre/sobre.png" alt="Carlos Henrique">
+        </div>
       </div>
-      <div class="col-md-7">
-        <h2 class="fw-bold">Sou Carlos Henrique</h2>
-        <p>
-          Pai orgulhoso da Helena, artista com 9 anos de experiência e apaixonado por transformar    ideias em arte na pele. 
-        </p>
-        <p>
-            Ao longo da minha trajetória, conquistei 20 premiações nacionais e me especializei em artes customizadas, criando tatuagens que refletem a individualidade de cada cliente.
-  
-        </p>          
-        <p>
-            Além de tatuador, sou sócio do estúdio "Só mais uma Tattoo" — um espaço que respira arte e liberdade criativa — e fundador da Tatto Gang, um movimento que une amantes da tatuagem em torno da autenticidade e da expressão pessoal.
-  
-        </p>          
-        <p>
-            Aqui, cada tatuagem é mais do que um desenho: é um símbolo, uma memória, uma obra de arte viva.
-        </p> 
+
+      <!-- TEXTO -->
+      <div class="col-md-7" data-aos="fade-left">
+        <div class="about-content">
+
+          <span class="about-eyebrow">GVNG by Carlos Henrique</span>
+
+          <h2>Arte que carrega identidade,<br>história e propósito</h2>
+
+          <p class="lead">
+            Sou Carlos Henrique — pai da Helena, artista há mais de 9 anos e apaixonado por transformar ideias em arte viva.
+          </p>
+
+          <p>
+            Ao longo da minha trajetória, conquistei <strong>20 premiações nacionais</strong> e me especializei em
+            <strong>artes customizadas</strong>, criando tatuagens que representam a individualidade de cada cliente.
+          </p>
+
+          <p>
+            Sou sócio do estúdio <strong>“Só Mais Uma Tattoo”</strong> e fundador da
+            <strong>Tattoo Gang</strong>, um movimento que une arte, liberdade criativa e autenticidade.
+          </p>
+
+          <p class="signature-text">
+            Aqui, cada tatuagem é mais do que um desenho — é um símbolo, uma memória, uma obra de arte viva.
+          </p>
+
+          <div class="about-stats">
+
+            <div class="stat-item">
+              <span class="stat-number" data-target="9">0</span>
+              <span class="stat-label">Anos de experiência</span>
+            </div>
+
+            <div class="stat-item">
+              <span class="stat-number" data-target="20">0</span>
+              <span class="stat-label">Premiações nacionais</span>
+            </div>
+
+          </div>
+
+          <!-- CTA -->
+          <div class="about-actions">
+            <a href="#contato" class="btn-premium">
+              Falar com o artista
+            </a>
+          </div>
+
+        </div>
       </div>
-      <div>
-        <a href="#">Me Chama</a>
-      </div>
+
     </div>
   </div>
 </section>
+
+<script src="../../../assets/js/main.js"></script>
+<script src="../../../assets/js/animations.js"></script>

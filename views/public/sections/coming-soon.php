@@ -50,7 +50,7 @@
 
 <body>
 
-<section class="coming-soon">
+<section id="hero" class="coming-soon">
 
   <!-- Vídeo de fundo (loop, muted, autoplay) -->
   <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" poster="assets/img/hero/poster_hero.jpg">
