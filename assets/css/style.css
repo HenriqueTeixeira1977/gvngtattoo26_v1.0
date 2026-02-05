@@ -1473,10 +1473,9 @@ footer a:hover {
     bottom: 10%;
     left: 5%;
   }
-}
-@media (max-width: 576px) {
-  #localizacao {
-    padding-top: 40px;
+  
+  #localizacao {background-color: red;
+    padding: 10px;
   }
   #localizacao .mapa {
     aspect-ratio: 1 / 1;
@@ -1484,9 +1483,8 @@ footer a:hover {
   #localizacao .text {
     padding-bottom: 24px;
   }
-} 
+ 
 /*  ===== FOOTER =====  */
-@media (max-width: 576px) {
   footer {
     padding: 32px 20px;
   }
