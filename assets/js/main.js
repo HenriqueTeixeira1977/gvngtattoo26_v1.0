@@ -1,22 +1,34 @@
-// Navbar Scroll Effect *****************************************
-document.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar-overlay");
-    if (window.scrollY > 80) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
+// Fecha o menu ao clicar em um link (mobile)
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const menu = document.querySelector('.navbar-collapse');
+    if (menu.classList.contains('show')) {
+      new bootstrap.Collapse(menu).toggle();
     }
+  });
 });
 
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar');
-
-    if (window.scrollY > 80) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+// Header sólido ao scroll
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar-overlay');
+  if (window.scrollY > 80) {
+    nav.style.background = 'rgba(0,0,0,0.85)';
+  } else {
+    nav.style.background = 'rgba(0, 0, 0, 0)';
+  }
 });
+
+
+const navbar = document.querySelector('.navbar-overlay');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    navbar.classList.add('is-sticky');
+  } else {
+    navbar.classList.remove('is-sticky');
+  }
+});
+
 
 
 
@@ -204,50 +216,56 @@ document.addEventListener('DOMContentLoaded', () => {
 //  ABOUT/SOBRE***********************************************
 
 document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.stat-number');
-  let started = false;
 
-  const animateCounters = () => {
-    if (started) return;
+  const counters = document.querySelectorAll('.counter');
+  let animated = false;
+
+  function animateCounters() {
+    if (animated) return;
 
     counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      const duration = 1200;
+      const target = +counter.dataset.target;
+      const duration = 1400;
       const startTime = performance.now();
 
-      const update = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const value = Math.floor(progress * target);
-
-        counter.textContent = value;
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+        counter.textContent = Math.floor(eased * target);
 
         if (progress < 1) {
           requestAnimationFrame(update);
         } else {
           counter.textContent = target;
         }
-      };
+      }
 
       requestAnimationFrame(update);
     });
 
-    started = true;
-  };
+    animated = true;
+  }
 
   const observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
       animateCounters();
       observer.disconnect();
     }
-  }, { threshold: 0.4 });
+  }, { threshold: 0.5 });
 
-  observer.observe(document.querySelector('.about-stats'));
+  observer.observe(document.querySelector('.cinematic-stats'));
 });
 
 
 
 
+
+
+// SECTION CONTACTS
+document.querySelector('.contact-form')?.addEventListener('submit', e => {
+  e.preventDefault();
+  e.target.querySelector('.btn-contact').innerText = 'Mensagem enviada ✓';
+});
 
 
 

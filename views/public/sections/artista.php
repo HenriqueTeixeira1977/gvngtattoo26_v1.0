@@ -5,7 +5,7 @@
 
       <!-- IMAGEM -->
       <div class="col-md-5" data-aos="fade-right">
-        <div class="about-image">
+        <div class="about-image parallax-image">
           <img src="assets/img/sobre/sobre.png" alt="Carlos Henrique">
         </div>
       </div>
@@ -35,20 +35,28 @@
           <p class="signature-text">
             Aqui, cada tatuagem é mais do que um desenho — é um símbolo, uma memória, uma obra de arte viva.
           </p>
+          
+          <!--  CONTADORES  -->
+          <div class="about-stats cinematic-stats">
 
-          <div class="about-stats">
-
-            <div class="stat-item">
-              <span class="stat-number" data-target="9">0</span>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+              <span class="stat-number">
+                <span class="prefix">+</span>
+                <span class="counter" data-target="9">0</span>
+              </span>
               <span class="stat-label">Anos de experiência</span>
             </div>
 
-            <div class="stat-item">
-              <span class="stat-number" data-target="20">0</span>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="150">
+              <span class="stat-number">
+                <span class="prefix">+</span>
+                <span class="counter" data-target="20">0</span>
+              </span>
               <span class="stat-label">Premiações nacionais</span>
             </div>
 
           </div>
+
 
           <!-- CTA -->
           <div class="about-actions">

@@ -4,7 +4,7 @@
 <!--  HERO COUNTER -->
 <?php include 'views/public/sections/coming-soon.php'; ?>
 
-<!--  GALERIA -->
+<!--  STYLES  -->
 <?php include 'views/public/sections/styles.php'; ?>
 <!--  LOJA -->
 <?php include 'views/public/sections/store.php'; ?>
@@ -14,15 +14,11 @@
 
 <!--  DEPOIMENTOS -->
 <?php include 'views/public/sections/depoimentos.php'; ?>
-
-
-<!--  PARALLAX -->
-<?php include 'views/public/sections/faq.php'; ?>
-
 <!--  SOBRE -->
 <?php include 'views/public/sections/artista.php'; ?>
 
-
+<!--  FAQ -->
+<?php include 'views/public/sections/faq.php'; ?>
 <!--  CONTATO -->
 <?php include 'views/public/sections/contato.php'; ?>  
 <!--  LOCALIZAÇÃO -->

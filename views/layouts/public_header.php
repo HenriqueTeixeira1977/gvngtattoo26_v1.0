@@ -51,36 +51,67 @@
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-overlay">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="/index.php">
-            <img src="assets/img/logotipos/logo5.png" 
-                class="logo logo-white" 
-                height="70" 
-                alt="GVNG Tattoo">
-<!--
-            <img src="assets/img/logotipos/logo8.png" 
-                class="logo logo-dark" 
-                height="50" 
-                alt="GVNG Tattoo">
--->
-        </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#hero">
+        <img src="assets/img/logotipos/logo5.png" 
+             alt="GVNG Tattoo"
+             class="logo">
+      </a>
 
-        <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#styles">Estilos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#loja">Store</a></li>
-                <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#artista">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://wa.me/5519997366901" target="_blank">19 99733-9148</a></li>
-            </ul>
-        </div>  
+      <!-- TOGGLER CUSTOM -->
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#mainMenu"
+              aria-label="Abrir menu">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#styles">Estilos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#loja">Store</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#artista">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+
+          <!-- CTA -->
+          <li class="nav-item">
+            <a class="btn btn-outline-light btn-cta ms-lg-3"
+               href="https://wa.me/5519997366901"
+               target="_blank">
+              Agendar Tattoo
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
     </div>
-</nav>
+  </nav>
 
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/animations.js"></script>
