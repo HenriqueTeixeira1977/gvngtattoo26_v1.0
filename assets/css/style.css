@@ -1474,7 +1474,7 @@ footer a:hover {
     left: 5%;
   }
   
-  #localizacao {background-color: red;
+  #localizacao {background-color: rgb(20, 20, 20);
     padding: 10px;
   }
   #localizacao .mapa {
