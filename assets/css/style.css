@@ -57,57 +57,12 @@ a:hover {
   opacity: 0.8;
 }
 
-/* Navbar Premium com Glassmorphism */
-/*.navbar {
-  /*transition: all 0.15s ease;*/
-  
-  /*transition: all 0.4s ease-in-out;
-  padding: 1rem 2rem;
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(10px);
-}
-.navbar-brand {
-  font-size: 3rem;
-  color: #fff;
-}
-.navbar-brand:hover {
-  color: #aaa ;
-}
-.navbar .nav-link {
-  position: relative;
-  padding: 10px !important;
-  transition: color 0.3s ease;
-  color: #fff !important;
-  font-weight: 100;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background: #ffffff;
-  transition: all 0.3s ease;
-}
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
-  left: 0;
-}
-.navbar.scrolled {
-  height: 90px;
-  background: rgb(26, 26, 26) !important;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 3px 12px rgba(255, 255, 255, 0.5);
-}
-*/
+
 
 
 /* =========================
    HEADER / NAVBAR
 ========================= */
-
 #header {
   position: relative;
   z-index: 999;
@@ -116,7 +71,6 @@ a:hover {
 /* =========================
    NAVBAR BASE
 ========================= */
-
 .navbar-overlay {
   background: transparent;
   backdrop-filter: none;
@@ -127,7 +81,6 @@ a:hover {
     padding .4s ease;
   padding: 18px 0;
 }
-
 /* Estado ao rolar */
 .navbar-overlay.is-sticky {
   background: rgba(0, 0, 0, 0.55);
@@ -139,12 +92,10 @@ a:hover {
 /* =========================
    LOGO
 ========================= */
-
 .logo {
   height: 64px;
   transition: transform .3s ease, filter .3s ease;
 }
-
 .navbar-overlay.is-sticky .logo {
   transform: scale(0.92);
   filter: brightness(1.1);
@@ -153,7 +104,6 @@ a:hover {
 /* =========================
    NAV LINKS PREMIUM
 ========================= */
-
 .nav-link {
   color: #fff;
   font-weight: 500;
@@ -164,7 +114,6 @@ a:hover {
   padding: 6px 0;
   transition: color .3s ease;
 }
-
 /* Linha animada */
 .nav-link::after {
   content: "";
@@ -183,7 +132,6 @@ a:hover {
   transition: width .4s ease;
   opacity: 0.9;
 }
-
 /* Glow sutil */
 .nav-link::before {
   content: "";
@@ -193,16 +141,13 @@ a:hover {
   opacity: 0;
   transition: opacity .3s ease;
 }
-
 /* Hover */
 .nav-link:hover {
   color: #fff;
 }
-
 .nav-link:hover::after {
   width: 120%;
 }
-
 .nav-link:hover::before {
   opacity: 1;
 }
@@ -217,7 +162,6 @@ a:hover {
   text-transform: uppercase;
   transition: all .4s ease;
 }
-
 .btn-cta:hover {
   background: #fff;
   color: #000;
@@ -226,16 +170,13 @@ a:hover {
 /* =========================
    TOGGLER CUSTOM
 ========================= */
-
 .navbar-toggler {
   border: none;
   padding: 0;
 }
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 .toggler-line {
   display: block;
   width: 28px;
@@ -246,39 +187,8 @@ a:hover {
 }
 
 /* =========================
-   MOBILE MENU
-========================= */
-
-@media (max-width: 991px) {
-
-  .navbar-collapse {
-    background: rgba(0,0,0,0.95);
-    backdrop-filter: blur(12px);
-    margin-top: 15px;
-    border-radius: 16px;
-    padding: 20px;
-    animation: fadeSlide .4s ease;
-  }
-
-  .navbar-nav {
-    gap: 16px;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .btn-cta {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-/* =========================
    ANIMATION
 ========================= */
-
 @keyframes fadeSlide {
   from {
     opacity: 0;
@@ -291,25 +201,11 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HERO */
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -327,14 +223,15 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
 .hero .overlay {
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%; 
+  height: 100%;
   background: rgb(1, 255, 22);
   z-index: 1;
 }
@@ -359,20 +256,12 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
 /*STYLES*/
 .styles-premium {
   background: #000;
   padding: 120px 0;
 }
+
 /* HEADER */
 .section-header h2 {
   color: #fff;
@@ -417,7 +306,6 @@ a:hover {
   opacity: 0;
   transition: opacity .6s ease;
 }
-
 /* CONTENT */
 .overlay-content {
   position: absolute;
@@ -453,60 +341,18 @@ a:hover {
 .style-card-premium:hover img {
   transform: scale(1.12);
 }
-
 .style-card-premium:hover .overlay {
   opacity: 1;
 }
-
 .style-card-premium:hover .overlay-content {
   transform: translateY(0);
 }
-
-/* STYLE MOBILE */
-@media (max-width: 768px) {
-  .style-card-premium {
-    height: 420px;
-  }
-
-  .overlay-content {
-    left: 25px;
-    right: 25px;
-    bottom: 30px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* =========================
    SEÇÕES – PADRÃO GVNG
 ========================= */
-
 .section-header {
   text-align: center;
   margin-bottom: 90px;
@@ -522,10 +368,11 @@ a:hover {
   letter-spacing: 2px;
 }
 
+
+
 /* =========================
    STORE – ALINHADA AO HERO
 ========================= */
-
 .store-section {
   background: radial-gradient(
     circle at top,
@@ -572,7 +419,6 @@ a:hover {
   text-transform: uppercase;
   margin-bottom: 18px;
 }
-
 /* BUTTON */
 .store-btn {
   display: inline-block;
@@ -592,61 +438,11 @@ a:hover {
   border-color: #fff;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .store-section {
-    padding: 110px 0;
-  }
-
-  .section-header {
-    margin-bottom: 60px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ================================
    ESTILOS CAROUSEL – HERO IMPONENTE
 ================================ */
-
 #estilos-carousel {
   width: 100%;
   height: 100vh;
@@ -735,7 +531,6 @@ a:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(255, 255, 255, 0.25);
 }
-
 /*  CONTROLES – PREMIUM */
 .swiper-button-next,
 .swiper-button-prev {
@@ -762,38 +557,9 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============================
    DEPOIMENTOS – PREMIUM
 ============================ */
-
 #depoimentos {
   width: 100vw;
   position: relative;
@@ -812,7 +578,6 @@ a:hover {
   padding: 140px 0;
   background-color: rgba(0, 255, 21, 0);
 }
-
 /* TÍTULO */
 #depoimentos h2 {
   font-size: clamp(2.2rem, 5vw, 3rem);
@@ -836,7 +601,6 @@ a:hover {
     rgba(0, 0, 0, 0.95)
   );
 }
-
 /* HOVER CARD */
 #depoimentos .swiper-slide-active .card,
 #depoimentos .card:hover {
@@ -846,7 +610,6 @@ a:hover {
     0 0 25px rgba(255, 255, 255, 0),
     inset 0 0 0 1px rgba(255, 255, 255, 0);
 }
-
 /* AVATAR */
 #depoimentos img {
   border: 2px solid rgba(255,255,255,.15);
@@ -914,28 +677,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  PORTIFOLIO  */
 #portfolio {
   background-color: rgba(255, 0, 0, 0);
@@ -979,23 +720,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DIFERENCIAIS / CARDS */
 .hover-shadow:hover {
   box-shadow: 0 12px 25px rgba(0,0,0,0.7);
@@ -1017,18 +741,6 @@ a:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(197, 197, 197, 0.192) !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1056,21 +768,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  CTA FINAL  */
 .ctafinal{
   background-color: #000000;
@@ -1080,21 +777,6 @@ a:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1172,61 +854,33 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SECTION */
 .about-premium {
   background: #000;
   padding: 140px 0;
   color: #fff;
 }
-
 /* IMAGE */
 .about-image {
   position: relative;
   overflow: hidden;
 }
-
 .about-image img {
   width: 100%;
   transform: scale(1.05);
   transition: transform 1.2s ease;
 }
-
 .about-image:hover img {
   transform: scale(1.12);
 }
-
 .parallax-image img {
   will-change: transform;
   transition: transform .1s linear;
 }
-
-
 /* CONTENT */
 .about-content {
   max-width: 620px;
 }
-
 .about-eyebrow {
   display: inline-block;
   font-size: .7rem;
@@ -1235,7 +889,6 @@ a:hover {
   opacity: .6;
   margin-bottom: 18px;
 }
-
 /* TITLE */
 .about-content h2 {
   font-size: clamp(2rem, 4vw, 2.8rem);
@@ -1243,7 +896,6 @@ a:hover {
   letter-spacing: 1px;
   margin-bottom: 25px;
 }
-
 /* TEXT */
 .about-content p {
   font-size: .95rem;
@@ -1251,17 +903,14 @@ a:hover {
   color: rgba(255,255,255,.75);
   margin-bottom: 18px;
 }
-
 .about-content p strong {
   color: #fff;
 }
-
 /* LEAD */
 .about-content .lead {
   font-size: 1.05rem;
   color: rgba(255,255,255,.9);
 }
-
 /* SIGNATURE */
 .signature-text {
   font-style: italic;
@@ -1277,12 +926,10 @@ a:hover {
   margin-top: 60px;
   flex-wrap: wrap;
 }
-
 .stat-item {
   position: relative;
   overflow: hidden;
 }
-
 /* NUMBER */
 .stat-number {
   display: flex;
@@ -1293,7 +940,6 @@ a:hover {
   color: #fff;
   line-height: 1;
 }
-
 /* PLUS */
 .stat-number .prefix {
   font-size: 1.6rem;
@@ -1301,7 +947,6 @@ a:hover {
   opacity: .7;
   transform: translateY(6px);
 }
-
 /* LABEL */
 .stat-label {
   display: block;
@@ -1311,7 +956,6 @@ a:hover {
   opacity: .6;
   margin-top: 10px;
 }
-
 /* DECOR LINE */
 .stat-item::before {
   content: '';
@@ -1322,20 +966,6 @@ a:hover {
   height: 1px;
   background: rgba(255,255,255,.35);
 }
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .cinematic-stats {
-    justify-content: center;
-    gap: 45px;
-  }
-
-  .stat-number {
-    font-size: 3rem;
-  }
-}
-
-
 /* LINE DECOR */
 .stat-item::before {
   content: '';
@@ -1347,26 +977,10 @@ a:hover {
   background: rgba(255,255,255,.4);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-stats {
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
-  }
-}
-
-
-
-
 /* CTA */
 .about-actions {
   margin-top: 40px;
 }
-
 .btn-premium {
   display: inline-block;
   padding: 14px 36px;
@@ -1378,32 +992,10 @@ a:hover {
   text-transform: uppercase;
   transition: all .4s ease;
 }
-
 .btn-premium:hover {
   background: #fff;
   color: #000;
 }
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-premium {
-    padding: 90px 0;
-  }
-
-  .about-content {
-    text-align: center;
-  }
-
-  .signature-text {
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-
-
-
-
 
 
 
@@ -1506,128 +1098,72 @@ a:hover {
   font-size: .75rem;
   transition: all .4s ease;
 }
-
 .btn-contact:hover {
   background: #fff;
   color: #000;
 }
 
-/* CONTACT MOBILE */
-@media (max-width: 768px) {
-  .contact-info,
-  .contact-form {
-    padding: 30px;
-  }
-
-  .contact-premium {
-    padding: 90px 0;
-  }
-}
 
 
+/* =========================
+   LOCALIZAÇÃO - MAPA (PREMIUM)
+========================= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LOCALIZAÇÃO - MAPA */
-#localizacao {background-color: rgba(255, 0, 0, 0);
+#localizacao {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-  padding: 0px 0 0 0;
-  height: 100%;
-  border: none;
-}
-#localizacao .text {background-color: #1eff0000;
-  display: flex;
-  justify-self: center;
   align-items: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
   width: 100%;
+  padding: 80px 0 0;
+  background-color: transparent;
 }
+
+#localizacao .text {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px 40px;
+  text-align: center;
+}
+
 #localizacao .mapa {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border: none;
+  overflow: hidden;
 }
 
+#localizacao .mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(100%) contrast(1.1) brightness(0.9);
+}
 
+/* =========================
+   FOOTER PREMIUM
+========================= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
 footer {
-  border-top: 1px solid #333;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 24px 16px;
+  text-align: center;
 }
 footer p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: #777;
 }
-footer a{
-  color: rgb(85, 85, 85);
+footer a {
+  color: #999;
+  text-decoration: none;
+  transition: color .3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer a:hover {
+  color: #fff;
+}
 
 
 
@@ -1669,16 +1205,6 @@ footer a{
     70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
     100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* VOLTAR AO TOPO */
@@ -1745,19 +1271,6 @@ footer a{
     transform: translateX(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ANIMAÇÕES ADICIONAIS */
 [data-aos] {
   transition-property: transform, opacity;
@@ -1768,35 +1281,47 @@ footer a{
 
 
 
+/*=====  RESPONSIVIDADE  =====*/
 
+/* =========================
+   MOBILE MENU
+========================= */
 
+@media (max-width: 996px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 992px) {
+  .navbar-collapse {
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(12px);
+    margin-top: 15px;
+    border-radius: 16px;
+    padding: 20px;
+    animation: fadeSlide .4s ease;
+  }
+  .navbar-nav {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .btn-cta {
+    width: 100%;
+    margin-top: 10px;
+  }
+/*=====  HERO  =====*/
   .hero-content h1 {
     font-size: 2.2rem;
   }
   .hero-content p {
     font-size: 1rem;
+  }
+
+/*====== LOCALIZAÇÃO E MAPA  =======*/
+  #localizacao {
+    padding-top: 60px;
+  }
+  #localizacao .mapa {
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -1817,7 +1342,7 @@ footer a{
     font-size: 1.3rem !important; 
   }
 
-
+/*  STYLES  */
   .estilo-slide {
     align-items: flex-end;
     padding-bottom: 15vh;
@@ -1840,13 +1365,9 @@ footer a{
   .swiper-button-prev {
     background-color: rgba(255, 0, 0, 0);
     color: #ffffff2f;
-  
   }
 
-
-
-
-  /*  DEPOIMENTOS  */
+/*  DEPOIMENTOS  */
   #depoimentos {
     background-color: rgba(255, 0, 0, 0.007);
     width: 100%;
@@ -1874,7 +1395,73 @@ footer a{
     font-size: 1rem;
   }
 }
+/* CONTACT MOBILE */
+@media (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    padding: 30px;
+  }
 
+  .contact-premium {
+    padding: 90px 0;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .store-section {
+    padding: 110px 0;
+  }
+
+  .section-header {
+    margin-bottom: 60px;
+  }
+}
+/* STYLE MOBILE */
+@media (max-width: 768px) {
+  .style-card-premium {
+    height: 420px;
+  }
+
+  .overlay-content {
+    left: 25px;
+    right: 25px;
+    bottom: 30px;
+  }
+}
+/* MOBILE ABOUT SECTION*/
+@media (max-width: 768px) {
+  .about-premium {
+    padding: 90px 0;
+  }
+  .about-content {
+    text-align: center;
+  }
+  .signature-text {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+/* =====  MOBILE  =====  */
+@media (max-width: 768px) {
+  .about-stats {
+    justify-content: center;
+    gap: 40px;
+  }
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .cinematic-stats {
+    justify-content: center;
+    gap: 45px;
+  }
+  .stat-number {
+    font-size: 3rem;
+  }
+} 
+
+/* Mobile */
 @media (max-width: 576px) {
   .hero-content h1 {
     font-size: 1.8rem;
@@ -1885,5 +1472,26 @@ footer a{
   .swiper-slide .caption {
     bottom: 10%;
     left: 5%;
+  }
+}
+@media (max-width: 576px) {
+  #localizacao {
+    padding-top: 40px;
+  }
+  #localizacao .mapa {
+    aspect-ratio: 1 / 1;
+  }
+  #localizacao .text {
+    padding-bottom: 24px;
+  }
+} 
+/*  ===== FOOTER =====  */
+@media (max-width: 576px) {
+  footer {
+    padding: 32px 20px;
+  }
+  footer p {
+    font-size: 0.75rem;
+    line-height: 1.6;
   }
 }

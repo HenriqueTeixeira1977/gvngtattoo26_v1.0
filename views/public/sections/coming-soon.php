@@ -42,6 +42,7 @@
 
     <!-- SEUS CSS (CAMINHO ABSOLUTO) -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
     <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/coming-soon.css">
     <link rel="stylesheet" href="assets/css/contato.css">
@@ -50,63 +51,62 @@
 
 <body>
 
-<section id="hero" class="coming-soon">
+  <section id="hero" class="coming-soon">
 
-  <!-- Vídeo de fundo (loop, muted, autoplay) -->
-  <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" poster="assets/img/hero/poster_hero.jpg">
-    <source src="assets/videos/gvng_hero.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo HTML5.
-  </video>
+    <!-- Vídeo de fundo (loop, muted, autoplay) -->
+    <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" poster="assets/img/hero/poster_hero.jpg">
+      <source src="assets/videos/gvng_hero.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
 
-
-  <!--  <div class="bg"></div>  -->
-  <div class="overlay"></div>
-  
-  <!-- TEXTOS  --> 
-  <div class="content text-center">
-    <a class="navbar-brand fw-bold" href="/index.php">
-      <img src="assets/img/logotipos/logo5.png" 
-          class="logo logo-white" 
-          height="250" 
-          alt="GVNG Tattoo">
-    </a>
-    <h1>GVNG</h1>
-    <span class="subtitle">by Carlos Henrique</span>
-    <p class="mt-4">
-      Nosso site está em desenvolvimento. Faltam...
-    </p>
+    <!--  <div class="bg"></div>  -->
+    <div class="overlay"></div>
     
-    <!-- COUNTER  -->
-    <div class="countdown mt-5">
-      <!-- DAYS  -->
-      <div class="time-box">
-        <span id="days">30</span>
-        <small>Dias</small>
+    <!-- TEXTOS  --> 
+    <div class="content text-center">
+      <a class="navbar-brand fw-bold" href="/index.php">
+        <img src="assets/img/logotipos/logo5.png" 
+            class="logo logo-white" 
+            height="250" 
+            alt="GVNG Tattoo">
+      </a>
+      <h1>GVNG</h1>
+      <span class="subtitle">by Carlos Henrique</span>
+      <p class="mt-4">
+        Nosso site está em desenvolvimento. Faltam...
+      </p>
+      
+      <!-- COUNTER  -->
+      <div class="countdown mt-5">
+        <!-- DAYS  -->
+        <div class="time-box">
+          <span id="days">30</span>
+          <small>Dias</small>
+        </div>
+        <!-- HOURS  -->
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Horas</small>
+        </div>
+        <!-- MINUTES  -->
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Min</small>
+        </div>
+        <!-- SECONDS  -->
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Seg</small>
+        </div>
       </div>
-      <!-- HOURS  -->
-      <div class="time-box">
-        <span id="hours">00</span>
-        <small>Horas</small>
-      </div>
-      <!-- MINUTES  -->
-      <div class="time-box">
-        <span id="minutes">00</span>
-        <small>Min</small>
-      </div>
-      <!-- SECONDS  -->
-      <div class="time-box">
-        <span id="seconds">00</span>
-        <small>Seg</small>
+      
+      <!-- BOTÕES  -->
+      <div class="actions mt-4">
+        <a href="https://wa.me/5519997366901" class="btn">Agendar Tattoo</a>
+        <a href="https://www.instagram.com/tatuador_henriq/" class="btn">Instagram</a>
       </div>
     </div>
-    
-    <!-- BOTÕES  -->
-    <div class="actions mt-4">
-      <a href="https://wa.me/5519997366901" class="btn">Agendar Tattoo</a>
-      <a href="https://www.instagram.com/tatuador_henriq/" class="btn">Instagram</a>
-    </div>
-  </div>
-</section>
+  </section>
 
 <script src="assets/js/coming-soon.js"></script>
 </body>

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style-responsive.css">
 <section id="artista" class="about-premium">
   <div class="container">
     <div class="row align-items-center g-5">

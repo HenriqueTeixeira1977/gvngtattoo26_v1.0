@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style-responsive.css">
 
 <!-- HERO PREMIUM -->
 <section id="inicio" class="hero position-relative vh-100 overflow-hidden" data-aos="fade">

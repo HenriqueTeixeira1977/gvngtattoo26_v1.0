@@ -1,3 +1,6 @@
+    <!-- SEUS CSS (CAMINHO ABSOLUTO) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
 <section id="contato" class="contact-premium">
   <div class="container">
 
