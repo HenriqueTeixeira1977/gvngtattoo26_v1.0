@@ -1,8 +1,8 @@
 /*=====  RESPONSIVIDADE  =====*/
 
-/* =========================
-   MOBILE MENU
-========================= */
+
+
+/* =================================================>>>  MOBILE MENU*/
 
 @media (max-width: 996px) {
 
@@ -28,12 +28,325 @@
 /*=====  HERO  =====*/
   .hero-content h1 {
     font-size: 2.2rem;
+    color: rgb(81, 255, 0);
+
   }
   .hero-content p {
+    font-size: 1rem; color: rgb(50, 47, 255);
+  }
+
+/*===================================>>>LOCALIZAÇÃO E MAPA*/
+  #localizacao {
+    padding-top: 60px;
+  }
+  #localizacao .mapa {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+
+
+
+/*=================================== MOBILE RESPONSIVE  ==========================*/
+@media (max-width: 768px) {
+  .hero-content h1 { 
+    font-size: 3rem; color: rgb(54, 42, 165);
+  }
+  h2.display-5 { 
+    font-size: 2.5rem; 
+  }
+  section {
+    padding: 0px 0; 
+  }
+  .display-2 { 
+    font-size: 3.5rem !important; 
+  }
+  .lead.fs-3 { 
+    font-size: 1.3rem !important; 
+  }
+  .content h1 {
+    letter-spacing: 4px;
+  }
+  .countdown {
+    gap: 0px;
+  }
+  .time-box span {
+    font-size: 2.5rem;
+  }
+
+/*======================================>>>  STYLES*/
+  .style-card-premium {
+    height: 420px;
+  }
+  .overlay-content {
+    left: 25px;
+    right: 25px;
+    bottom: 30px;
+  }
+  .estilo-slide {
+    align-items: flex-end;
+    padding-bottom: 15vh;
+    background-attachment: scroll;
+  }
+  .estilo-slide h2 {
+    letter-spacing: 0.15em;
+  }
+  .estilosSwiper {
+    height: 65vh;
+  }
+  .estilo-slide h2 {
+    font-size: 2rem;
+  }
+  .estilo-slide p {
+    font-size: 1rem;
+  }
+  /* Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(255, 0, 0, 0);
+    color: #ffffff2f;
+  }
+  
+  
+  /*==============================>>>  STORE SECTION  */
+  .store-section {
+    padding: 110px 0;
+  }
+  .section-header {
+    margin-bottom: 60px;
+  }
+
+
+/*================================>>>  DEPOIMENTOS SECTION  */
+  #depoimentos {
+    background-color: rgba(255, 0, 0, 0.007);
+    width: 100%;
+    height: 100vh;
+  }
+  #depoimentos h2 {
+    letter-spacing: 2px;
+  }
+  #depoimentos .container{background-color: rgba(255, 255, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #depoimentos .card {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+/*=================================>>>  ABOUT SECTION*/
+  .about-premium {
+    padding: 90px 0;
+  }
+  .about-content {
+    text-align: center;
+  }
+  .signature-text {
+    border-left: none;
+    padding-left: 0;
+  }
+  .about-stats {
+    justify-content: center;
+    gap: 40px;
+  }
+  .stat-number {
+    font-size: 2.5rem;
+  }  
+  .cinematic-stats {
+    justify-content: center;
+    gap: 45px;
+  }
+  .stat-number {
+    font-size: 3rem;
+  }
+
+/* =================================>>> FAQ SECTION*/
+  .faq-question {
     font-size: 1rem;
   }
 
-/*====== LOCALIZAÇÃO E MAPA  =======*/
+/* =================================>>> CONTACT SECTION*/
+  .contact-info,
+  .contact-form {
+    padding: 30px;
+  }
+  .contact-premium {
+    padding: 90px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .swiper-slide .caption {
+    bottom: 10%;
+    left: 5%;
+  }
+}
+  #localizacao {
+    padding-top: 40px;
+  }
+  #localizacao .mapa {
+    aspect-ratio: 1 / 1;
+  }
+  #localizacao .text {
+    padding-bottom: 24px;
+  }
+/*  ===== FOOTER =====  */
+  footer {
+    padding: 32px 20px;
+  }
+  footer p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+/*=======================
+RESPONSIVE - STYLE
+========================= */
+
+@media (max-width: 576px) {
+  .coming-soon{
+    padding: 0;
+  }
+  .content{
+    background-color: rgba(43, 255, 0, 0);
+    height: 100vh;
+  }
+  .content p{background-color: rgba(255, 255, 0, 0);
+    font-size: 1rem;
+  }
+  /*  COUNTDOWN  */  
+  .countdown{
+    background-color: rgba(0, 17, 255, 0);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .countdown .time-box{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;    
+    min-width: 70px;
+    height: 50px;
+    margin: 0;
+    padding: 0px;
+  }
+  .countdown .time-box span{
+    font-size: 1.7rem;
+    padding: 0;
+  }
+  .countdown .time-box small{
+    font-size: .7rem;
+  }
+  /*  BOTÕES  */
+  .actions .btn {  
+    min-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====  RESPONSIVIDADE  =====*/
+
+/*=====  TABLET RESPONSIVE  =====*/
+@media (max-width: 768px) {
+
+  .navbar-collapse {
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(12px);
+    margin-top: 15px;
+    border-radius: 16px;
+    padding: 20px;
+    animation: fadeSlide .4s ease;
+  }
+  .navbar-nav {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .btn-cta {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+/*=====  HERO  =====*/
+  
+  #hero{
+    height: 100vh;
+    padding: 0;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }  
+  .hero-content h1 { 
+    font-size: 3rem; 
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }  
+  
+  h2.display-5 { 
+    font-size: 2.5rem; 
+  }
+  section { 
+    padding: 0px 0; 
+  }
+  .display-2 { 
+    font-size: 3.5rem !important; 
+  }
+  .lead.fs-3 { 
+    font-size: 1.3rem !important; 
+  }
+
+/*======  LOCALIZAÇÃO E MAPA  =======*/
   #localizacao {
     padding-top: 60px;
   }
@@ -43,21 +356,8 @@
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 { 
-    font-size: 3rem; 
-  }
-  h2.display-5 { 
-    font-size: 2.5rem; 
-  }
-  section { 
-    padding: 80px 0; 
-  }
-  .display-2 { 
-    font-size: 3.5rem !important; 
-  }
-  .lead.fs-3 { 
-    font-size: 1.3rem !important; 
-  }
+
+
 
 /*  STYLES  */
   .estilo-slide {
@@ -103,28 +403,21 @@
     border-radius: 10px;
   }
 
-
-
-
-
-  /*  FAQ  */
+/*  FAQ  */
   .faq-question {
     font-size: 1rem;
   }
-}
+
 /* CONTACT MOBILE */
-@media (max-width: 768px) {
+
   .contact-info,
   .contact-form {
     padding: 30px;
   }
-
   .contact-premium {
     padding: 90px 0;
   }
-}
-/* MOBILE */
-@media (max-width: 768px) {
+
   .store-section {
     padding: 110px 0;
   }
@@ -132,21 +425,17 @@
   .section-header {
     margin-bottom: 60px;
   }
-}
-/* STYLE MOBILE */
-@media (max-width: 768px) {
+  
   .style-card-premium {
     height: 420px;
   }
-
   .overlay-content {
     left: 25px;
     right: 25px;
     bottom: 30px;
   }
-}
-/* MOBILE ABOUT SECTION*/
-@media (max-width: 768px) {
+  
+  /* MOBILE ABOUT SECTION*/
   .about-premium {
     padding: 90px 0;
   }
@@ -157,9 +446,6 @@
     border-left: none;
     padding-left: 0;
   }
-}
-/* =====  MOBILE  =====  */
-@media (max-width: 768px) {
   .about-stats {
     justify-content: center;
     gap: 40px;
@@ -167,8 +453,6 @@
   .stat-number {
     font-size: 2.5rem;
   }
-}
-@media (max-width: 768px) {
   .cinematic-stats {
     justify-content: center;
     gap: 45px;
@@ -176,7 +460,10 @@
   .stat-number {
     font-size: 3rem;
   }
-} 
+
+
+}
+
 
 /* Mobile */
 @media (max-width: 576px) {
@@ -190,10 +477,9 @@
     bottom: 10%;
     left: 5%;
   }
-}
-@media (max-width: 576px) {
-  #localizacao {
-    padding-top: 40px;
+  
+  #localizacao {background-color: rgb(20, 20, 20);
+    padding: 10px;
   }
   #localizacao .mapa {
     aspect-ratio: 1 / 1;
@@ -201,9 +487,8 @@
   #localizacao .text {
     padding-bottom: 24px;
   }
-} 
+ 
 /*  ===== FOOTER =====  */
-@media (max-width: 576px) {
   footer {
     padding: 32px 20px;
   }
@@ -212,4 +497,15 @@
     line-height: 1.6;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
