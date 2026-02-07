@@ -8,7 +8,7 @@
         
         <!-- Depoimento 1 -->
         <div class="swiper-slide">
-          <div class="card bg-black text-light border-0 p-4">
+          <div class="card text-light border-0 p-4">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/img/depoimentos/cliente1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Cliente 1">
               <div>

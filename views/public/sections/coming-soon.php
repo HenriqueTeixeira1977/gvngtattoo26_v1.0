@@ -42,7 +42,7 @@
 
     <!-- SEUS CSS (CAMINHO ABSOLUTO) -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="../../../assets/css/style-responsive.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
     <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/coming-soon.css">
     <link rel="stylesheet" href="assets/css/contato.css">
