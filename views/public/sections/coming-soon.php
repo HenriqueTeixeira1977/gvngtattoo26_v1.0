@@ -106,6 +106,6 @@
     </div>
   </section>
 
-<script src="../../assets/js/coming-soon.js"></script>
+<script src="assets/js/coming-soon.js"></script>
 </body>
 </html>
