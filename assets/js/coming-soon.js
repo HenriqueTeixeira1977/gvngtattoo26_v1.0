@@ -10,7 +10,7 @@ if (bg) {
 // =========================
 // COUNTDOWN — DATA FIXA
 // =========================
-const launchDate = new Date('2026-30-12T00:00:00').getTime();
+const launchDate = new Date('2026-05-17T00:00:00').getTime();
 
 const countdownContainer = document.querySelector('.countdown');
 
