@@ -108,6 +108,6 @@
     </div>
   </section>
 
-<script src="../../../assets/js/coming-soon.js"></script>
+<script src="gvngtattoo26_v1.0/assets/js/coming-soon.js"></script>
 </body>
 </html>
