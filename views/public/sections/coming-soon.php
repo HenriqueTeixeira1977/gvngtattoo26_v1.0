@@ -50,9 +50,7 @@
 </head>
 
 <body>
-
   <section id="hero" class="coming-soon">
-
     <!-- Vídeo de fundo (loop, muted, autoplay) -->
     <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" poster="assets/img/hero/poster_hero.jpg">
       <source src="assets/videos/gvng_hero.mp4" type="video/mp4">
@@ -108,6 +106,6 @@
     </div>
   </section>
 
-<script src="/assets/js/coming-soon.js"></script>
+<script src="../../../assets/js/coming-soon.js"></script>
 </body>
 </html>
