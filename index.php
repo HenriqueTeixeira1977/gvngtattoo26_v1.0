@@ -5,7 +5,7 @@
 <?php include 'views/public/sections/coming-soon.php'; ?>
 
 <!--  STYLES  -->
-<?php include 'views/public/sections/styles.php'; ?>
+<?php include ' views/public/sections/styles.php'; ?>
 <!--  LOJA -->
 <?php include 'views/public/sections/store.php'; ?>
 

@@ -45,3 +45,5 @@ gvngtattoo26_v1.0/
    - Ajuste as configurações no topo do `index.php`:
      ```php
      $whatsappNumber = '5513999999999'; // Número completo com código do país (sem +)
+
+     
